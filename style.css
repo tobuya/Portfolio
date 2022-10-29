@@ -1,3 +1,155 @@
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+ul,
+li {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+header {
+  width: 414px;
+  height: 92px;
+  left: 0;
+  top: 0;
+  position: absolute;
+  background-color: #3c3a39;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.white-color {
+  color: #fff;
+}
+
+.logo-placeholder {
+  display: flex;
+  align-items: center;
+  padding-left: 12px;
+  position: absolute;
+  width: 101px;
+  height: 44px;
+  left: 12px;
+  top: calc(50% - 44px / 2);
+}
+
+.name {
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 24px;
+}
+
+.menu-placeholder {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding-right: 12px;
+  position: absolute;
+  width: 60px;
+  height: 44px;
+  right: 24px;
+  top: calc(50% - 44px / 2);
+  border-radius: 8px;
+}
+
+.menu {
+  width: 24px;
+  height: 24px;
+}
+
+.headline {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 120px 24px;
+  gap: 12px;
+  position: absolute;
+  width: 414px;
+  height: 590px;
+  left: 0;
+  top: 92px;
+  background-color: #1c1a19;
+  background-image: url(images/headline-background.svg);
+  background-repeat: no-repeat;
+  background-position: 90% 115%;
+}
+
+.headline-bio {
+  display: flex;
+  flex-flow: column wrap;
+  align-items: flex-start;
+  width: 327px;
+  gap: 12px;
+  padding-bottom: 0;
+}
+
+.primary-text {
+  font-family: 'Crete Round', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 56px;
+  line-height: 64px;
+  letter-spacing: 0.37px;
+  color: #ff6b00;
+  height: 124px;
+  width: 327px;
+  margin: 0;
+}
+
+.supporting-text {
+  height: 27px;
+  width: 327px;
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 32px;
+  color: #fff5e1;
+  margin: 0;
+  display: flex;
+  align-items: center;
+}
+
+.description {
+  height: 123px;
+  width: 327px;
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #fff;
+  margin: 0;
+}
+
+.social-media {
+  width: 200px;
+  height: 40px;
+  left: 24px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0;
+}
+
+.frame {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 8px;
+  width: 40px;
+  height: 40px;
+  border-radius: 8px;
 }
