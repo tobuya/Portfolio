@@ -4,7 +4,7 @@
 
 @font-face {
   font-family: myFont;
-  src: url(InaiMathi.ttf)
+  src: url(InaiMathi.ttf);
 }
 
 body {
@@ -354,7 +354,7 @@ main {
   display: flex;
   flex-direction: row;
   align-items: center;
-  padding: 0px;
+  padding: 0;
   gap: 12px;
   width: 236px;
   height: 40px;
@@ -390,7 +390,7 @@ main {
   background: #ff6b00;
   color: #fff;
   letter-spacing: 0.03em;
-  font-family: 'Inter';
+  font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 17px;
@@ -474,13 +474,12 @@ main {
 }
 
 #language {
-    list-style: none;
-    background-image: url('images/language.svg');
-    background-repeat: no-repeat;
-    background-position: 5% 5%;
-    background-size: 18px;
+  list-style: none;
+  background-image: url('images/language.svg');
+  background-repeat: no-repeat;
+  background-position: 5% 5%;
+  background-size: 18px;
 }
-
 
 .skills {
   font-family: 'Inter', sans-serif;
@@ -505,11 +504,11 @@ main {
 }
 
 #framework {
-    list-style: none;
-    background-image: url('images/framework.svg');
-    background-repeat: no-repeat;
-    background-position: 5% 5%;
-    background-size: 18px;
+  list-style: none;
+  background-image: url('images/framework.svg');
+  background-repeat: no-repeat;
+  background-position: 5% 5%;
+  background-size: 18px;
 }
 
 #skill > li {
