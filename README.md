@@ -1,13 +1,13 @@
 # Portfolio
 
-> This is a portfolio repository build from a Figma mobile phone design using CSS Flex box layout and HTML. 
+> This is a portfolio repository build from a Figma mobile phone design using CSS Flex layout, CSS Grid layout and HTML.
 
 
 ## Built With
 
 - HTML
 - CSS
-- Figma
+
 
 
 ## Authors
@@ -60,6 +60,7 @@ Give a ⭐️ if you like this project!
 - Microverse
 - Inspiration
 - Coding partners
+- Figma for providing the template
 
 ## 📝 License
 
