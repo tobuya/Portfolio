@@ -168,7 +168,7 @@ main {
   gap: 80px;
   position: absolute;
   width: 390px;
-  height: 5000px;
+  height: 5500px;
   left: 0;
   top: 682px;
 }
@@ -196,13 +196,13 @@ main {
 }
 
 .frame44 {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 0;
+  display: grid;
+  grid-template-rows: 1fr;
+  justify-items: center;
+  padding: 0 12px;
   gap: 24px;
   width: 390px;
-  height: 4000px;
+  height: 3500px;
 }
 
 .featured-img {
@@ -212,13 +212,12 @@ main {
   padding: 0 24px;
   gap: 24px;
   width: 390px;
-  height: 3150px;
+  height: 3300px;
 }
 
-.featured-img > iframe {
+.featured-img > img {
   width: 327px;
   height: 237px;
-  background-image: url(images/placeholder.svg);
 }
 
 .right-block {
@@ -317,15 +316,17 @@ main {
 
 .card-work {
   width: 327px;
-  height: 386px;
+  height: 427px;
   background-image: url(images/cardwork.svg);
-  display: grid;
-  grid-auto-rows: 4fr 1fr;
+  display: flex;
+  flex-direction: column;
 }
 
 .group {
-  display: grid;
-  grid-template-rows: 1fr 1fr 0.5fr;
+  display: flex;
+  flex-direction: column;
+  padding-top: 50px;
+  padding-left: 10px;
 }
 
 .group-header {
@@ -374,7 +375,7 @@ main {
   flex-grow: 2;
 }
 
-.group-a {
+.group-li {
   width: 32px;
   height: 20px;
   font-family: 'Inter', sans-serif;
@@ -398,6 +399,23 @@ main {
   border: none;
 }
 
+button.action:hover,
+button.interaction:hover {
+  cursor: pointer;
+  color: #ff6b00;
+  background-color: #fff;
+  border: 1px solid #ff6b00;
+  font-weight: bolder;
+}
+
+button.action:disabled,
+button.interaction:disabled {
+  color: #1c1a19;
+  background-color: #f4f5f7;
+  font-weight: bolder;
+  cursor: none;
+}
+
 .about-me {
   display: flex;
   flex-direction: column;
@@ -405,7 +423,7 @@ main {
   padding: 60px 24px;
   gap: 12px;
   width: 390px;
-  height: 1750px;
+  height: 2000px;
   background: #1c1a19;
   background-image: url(images/Group.svg);
   background-position: 100% 38%;
@@ -452,7 +470,7 @@ main {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin-top: 240px;
+  margin-top: 335px;
   padding-top: 40px;
   margin-left: 8px;
   width: 320px;
@@ -460,7 +478,7 @@ main {
   border-top: 2px solid #e5e5e5;
 }
 
-#language > li {
+#language > h3 {
   font-family: myFont, sans-serif;
   font-style: normal;
   font-weight: 700;
@@ -477,7 +495,7 @@ main {
   list-style: none;
   background-image: url('images/language.svg');
   background-repeat: no-repeat;
-  background-position: 5% 5%;
+  background-position: 13% 5%;
   background-size: 18px;
 }
 
@@ -490,7 +508,7 @@ main {
   color: #fff;
 }
 
-#framework > li {
+#framework > h3 {
   font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: 700;
@@ -501,6 +519,7 @@ main {
   align-items: center;
   text-align: center;
   color: #fff;
+  width: 240px;
 }
 
 #framework {
@@ -508,17 +527,18 @@ main {
   background-image: url('images/framework.svg');
   background-repeat: no-repeat;
   background-position: 5% 5%;
-  background-size: 18px;
+  background-size: 15px;
 }
 
-#skill > li {
+#skill > h3 {
   font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 32px;
   line-height: 44px;
   display: flex;
-  align-items: center;
+  align-items: flex-start;
+  padding-left: 50px;
   flex-direction: column;
   color: #fff;
 }
@@ -527,10 +547,6 @@ main {
   list-style: none;
   background-image: url('images/skill.svg');
   background-repeat: no-repeat;
-  background-position: 5% 5%;
+  background-position: 12% 5%;
   background-size: 18px;
-}
-
-button:hover {
-  cursor: pointer;
 }
