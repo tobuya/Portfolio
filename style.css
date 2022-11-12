@@ -674,6 +674,25 @@ textarea {
     top: 0;
   }
 
+  .name {
+    animation-duration: 3s;
+    animation-name: slide;
+    animation-iteration-count: 3;
+    animation-direction: alternate;
+  }
+
+  @keyframes slide {
+    from {
+      margin-left: 100%;
+      width: 300%;
+    }
+
+    to {
+      margin-left: 0%;
+      width: 100%;
+    }
+  }
+
   .toolbar {
     width: 100%;
     padding: 5px 100px;
@@ -728,6 +747,13 @@ textarea {
   .primary-text {
     width: 60%;
     height: fit-content;
+    transition-property: color;
+    transition-duration: 4s;
+    transition-delay: 0;
+  }
+
+  .primary-text:hover {
+    color: #008000;
   }
 
   .supporting-text {
