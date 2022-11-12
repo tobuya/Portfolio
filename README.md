@@ -1,6 +1,6 @@
 # Portfolio
 
-> This is a portfolio repository build from a Figma mobile phone design using CSS Flex layout, CSS Grid layout and HTML.
+> This is a portfolio repository built from a Figma design for desktop and mobile version to demonstrate Responsive Web Design using CSS Flex layout, CSS Grid layout and HTML.
 
 
 ## Built With
