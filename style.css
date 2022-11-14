@@ -985,7 +985,7 @@ textarea {
     margin-top: 0;
     width: 100%;
     height: fit-content;
-    padding: 7vh 0 0 15vw;
+    padding: 7vh 0 0 7vw;
     background-image: url("images/Frame.svg");
     background-position: 100% 12%;
     background-size: 35% 50%;
@@ -1020,9 +1020,7 @@ textarea {
     padding-left: 0;
     display: flex;
     flex-direction: row;
-    justify-content: flex-start;
-    gap: 10%;
-    margin: 0 7vw;
+    justify-content: space-between;
   }
 
   #language {
