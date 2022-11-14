@@ -729,7 +729,7 @@ textarea {
   .headline {
     margin-top: 0;
     width: 100%;
-    height: auto;
+    height: 100vh;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -985,7 +985,7 @@ textarea {
     margin-top: 0;
     width: 100%;
     height: fit-content;
-    padding: 7vh 0 0 7vw;
+    padding: 7vh 0 0 15vw;
     background-image: url("images/Frame.svg");
     background-position: 100% 12%;
     background-size: 35% 50%;
