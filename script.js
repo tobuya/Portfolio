@@ -62,3 +62,9 @@ function displayPortfolioSection() {
   removeMobileMenu();
   window.location.reload(true);
 }
+
+menuAnchor.addEventListener('click', displayMobileMenu);
+portfolioLink.addEventListener('click', displayPortfolioSection);
+aboutLink.addEventListener('click', displayPortfolioSection);
+contactLink.addEventListener('click', displayPortfolioSection);
+cross.addEventListener('click', displayPortfolioSection);
