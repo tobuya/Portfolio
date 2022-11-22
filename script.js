@@ -34,3 +34,12 @@ about.appendChild(aboutLink);
 aboutLink.textContent = 'About';
 aboutLink.href = '#information';
 aboutLink.classList.add('menu-text');
+
+const contact = document.createElement('li');
+ul.appendChild(contact);
+contact.classList.add('menu-container');
+const contactLink = document.createElement('a');
+contact.appendChild(contactLink);
+contactLink.textContent = 'Contact';
+contactLink.href = '#contact-me';
+contactLink.classList.add('menu-text');
