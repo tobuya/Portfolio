@@ -24,9 +24,54 @@ a {
   text-decoration: none;
 }
 
+.mobile-menu {
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  height: 100%;
+  width: 390px;
+  padding-top: 30px;
+  background: #3c3a39;
+  z-index: 1;
+}
+
+.index {
+  z-index: 0;
+}
+
+#ul {
+  display: flex;
+  flex-direction: column;
+  align-content: flex-start;
+  gap: 12px;
+  width: 90%;
+  padding: 0;
+}
+
+.menu-text {
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 44px;
+  color: #fff5e1;
+}
+
+.menu-container {
+  padding-left: 5px;
+  border-bottom: 1px solid #fff5e1;
+}
+
+.cross-icon {
+  align-self: flex-end;
+  margin-right: 10px;
+}
+
 header {
   width: 390px;
-  height: 92px;
+  height: fit-content;
   background-color: #3c3a39;
 }
 
@@ -76,6 +121,8 @@ header {
 }
 
 .headline {
+  grid-row: 1 / 2;
+  grid-column: 1 / 2;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -162,10 +209,10 @@ main {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 120px 0;
+  padding: 0;
   gap: 80px;
   width: 390px;
-  height: 5500px;
+  height: 6090px;
 }
 
 .title {
@@ -670,8 +717,10 @@ textarea {
     width: 100%;
     height: auto;
     margin-bottom: 0;
-    position: sticky;
-    top: 0;
+  }
+
+  .mobile-menu {
+    display: none;
   }
 
   .name {
@@ -776,9 +825,10 @@ textarea {
 
   main {
     display: grid;
-    grid-template-rows: 0.1fr 1fr 0.83fr;
+    grid-template-rows: 0.3fr 0.1fr 0.45fr 0.15fr;
     grid-template-columns: 1fr;
-    gap: 0;
+    align-items: start;
+    gap: 5px;
     width: 100%;
     height: fit-content;
     padding: 0;
@@ -787,7 +837,7 @@ textarea {
   .title {
     margin-top: 0;
     border: none;
-    grid-row: 1 / 2;
+    grid-row: 2 / 3;
     grid-column: 1 / 2;
     width: 100%;
     display: flex;
@@ -817,7 +867,7 @@ textarea {
 
   .frame44 {
     height: fit-content;
-    grid-row: 2 / 3;
+    grid-row: 3 / 4;
     grid-column: 1 /2;
     width: 100%;
     padding-bottom: 0;
@@ -982,7 +1032,10 @@ textarea {
   }
 
   .about-me {
-    margin-top: 0;
+    grid-row: 4 / 5;
+    grid-column: 1 / 2;
+    margin-top: 10px;
+    margin-bottom: 0;
     width: 100%;
     height: fit-content;
     padding: 7vh 0 0 7vw;
@@ -1045,7 +1098,7 @@ textarea {
     height: fit-content;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: 0.6fr 0.3fr;
+    grid-template-rows: 0.7fr 0.3fr;
   }
 
   .break {
