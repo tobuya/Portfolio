@@ -717,6 +717,8 @@ textarea {
     width: 100%;
     height: auto;
     margin-bottom: 0;
+    position: sticky;
+    top: 0;
   }
 
   .mobile-menu {
