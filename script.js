@@ -25,3 +25,12 @@ portfolio.appendChild(portfolioLink);
 portfolioLink.textContent = 'Portfolio';
 portfolioLink.href = '#portfolio';
 portfolioLink.classList.add('menu-text');
+
+const about = document.createElement('li');
+ul.appendChild(about);
+about.classList.add('menu-container');
+const aboutLink = document.createElement('a');
+about.appendChild(aboutLink);
+aboutLink.textContent = 'About';
+aboutLink.href = '#information';
+aboutLink.classList.add('menu-text');
