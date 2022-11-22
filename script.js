@@ -52,3 +52,13 @@ function displayMobileMenu() {
   menuSection.innerHTML = '';
   menuSection.appendChild(mobileMenu);
 }
+
+function removeMobileMenu() {
+  menuSection.replaceChild(navigation, mobileMenu);
+}
+
+function displayPortfolioSection() {
+  mobileMenu.classList.remove('mobile-menu');
+  removeMobileMenu();
+  window.location.reload(true);
+}
