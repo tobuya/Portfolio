@@ -43,3 +43,12 @@ contact.appendChild(contactLink);
 contactLink.textContent = 'Contact';
 contactLink.href = '#contact-me';
 contactLink.classList.add('menu-text');
+
+function displayMobileMenu() {
+  const main = document.querySelector('main');
+  const footer = document.querySelector('footer');
+  main.classList.add('index');
+  footer.classList.add('index');
+  menuSection.innerHTML = '';
+  menuSection.appendChild(mobileMenu);
+}
