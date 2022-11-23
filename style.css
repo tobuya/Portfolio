@@ -71,7 +71,7 @@ a {
 
 header {
   width: 390px;
-  height: fit-content;
+  height: auto;
   background-color: #3c3a39;
 }
 
@@ -797,10 +797,10 @@ textarea {
 
   .primary-text {
     width: 60%;
-    height: fit-content;
+    height: auto;
     transition-property: color;
     transition-duration: 4s;
-    transition-delay: 0;
+    transition-delay: 1s;
   }
 
   .primary-text:hover {
@@ -809,17 +809,17 @@ textarea {
 
   .supporting-text {
     width: 80%;
-    height: fit-content;
+    height: auto;
   }
 
   .description {
     width: 52%;
-    height: fit-content;
+    height: auto;
   }
 
   .social-media {
-    height: 30%;
-    width: fit-content;
+    height: 40%;
+    width: auto;
     display: flex;
     flex-direction: column;
     order: 0;
@@ -832,7 +832,7 @@ textarea {
     align-items: start;
     gap: 5px;
     width: 100%;
-    height: fit-content;
+    height: auto;
     padding: 0;
   }
 
@@ -868,7 +868,7 @@ textarea {
   }
 
   .frame44 {
-    height: fit-content;
+    height: auto;
     grid-row: 3 / 4;
     grid-column: 1 /2;
     width: 100%;
@@ -877,7 +877,7 @@ textarea {
 
   .featured-img {
     width: 90%;
-    height: fit-content;
+    height: auto;
     display: grid;
     grid-template-rows: 0.4fr 1fr;
     grid-template-columns: 1fr 0.8fr;
@@ -904,14 +904,14 @@ textarea {
 
   .block-h2 {
     width: 100%;
-    height: fit-content;
+    height: auto;
     display: flex;
     flex-wrap: nowrap;
   }
 
   .block-p {
     width: 80%;
-    height: fit-content;
+    height: auto;
   }
 
   .block-nav {
@@ -1039,7 +1039,7 @@ textarea {
     margin-top: 10px;
     margin-bottom: 0;
     width: 100%;
-    height: fit-content;
+    height: auto;
     padding: 7vh 0 0 7vw;
     background-image: url("images/Frame.svg");
     background-position: 100% 12%;
@@ -1097,7 +1097,7 @@ textarea {
   footer {
     margin-top: 0;
     width: 100%;
-    height: fit-content;
+    height: auto;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: 0.7fr 0.3fr;
@@ -1134,7 +1134,7 @@ textarea {
 
   input {
     width: 90%;
-    height: fit-content;
+    height: auto;
   }
 
   .input {
