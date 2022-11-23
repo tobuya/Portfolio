@@ -24,9 +24,54 @@ a {
   text-decoration: none;
 }
 
+.mobile-menu {
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  height: 100%;
+  width: 390px;
+  padding-top: 30px;
+  background: #3c3a39;
+  z-index: 1;
+}
+
+.index {
+  z-index: 0;
+}
+
+#ul {
+  display: flex;
+  flex-direction: column;
+  align-content: flex-start;
+  gap: 12px;
+  width: 90%;
+  padding: 0;
+}
+
+.menu-text {
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 44px;
+  color: #fff5e1;
+}
+
+.menu-container {
+  padding-left: 5px;
+  border-bottom: 1px solid #fff5e1;
+}
+
+.cross-icon {
+  align-self: flex-end;
+  margin-right: 10px;
+}
+
 header {
   width: 390px;
-  height: 92px;
+  height: auto;
   background-color: #3c3a39;
 }
 
@@ -76,6 +121,8 @@ header {
 }
 
 .headline {
+  grid-row: 1 / 2;
+  grid-column: 1 / 2;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -162,10 +209,10 @@ main {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 120px 0;
+  padding: 0;
   gap: 80px;
   width: 390px;
-  height: 5500px;
+  height: 6090px;
 }
 
 .title {
@@ -674,6 +721,10 @@ textarea {
     top: 0;
   }
 
+  .mobile-menu {
+    display: none;
+  }
+
   .name {
     animation-duration: 3s;
     animation-name: slide;
@@ -746,10 +797,10 @@ textarea {
 
   .primary-text {
     width: 60%;
-    height: fit-content;
+    height: auto;
     transition-property: color;
     transition-duration: 4s;
-    transition-delay: 0;
+    transition-delay: 1s;
   }
 
   .primary-text:hover {
@@ -758,17 +809,17 @@ textarea {
 
   .supporting-text {
     width: 80%;
-    height: fit-content;
+    height: auto;
   }
 
   .description {
     width: 52%;
-    height: fit-content;
+    height: auto;
   }
 
   .social-media {
-    height: 30%;
-    width: fit-content;
+    height: 40%;
+    width: auto;
     display: flex;
     flex-direction: column;
     order: 0;
@@ -776,18 +827,19 @@ textarea {
 
   main {
     display: grid;
-    grid-template-rows: 0.1fr 1fr 0.83fr;
+    grid-template-rows: 0.3fr 0.1fr 0.45fr 0.15fr;
     grid-template-columns: 1fr;
-    gap: 0;
+    align-items: start;
+    gap: 5px;
     width: 100%;
-    height: fit-content;
+    height: auto;
     padding: 0;
   }
 
   .title {
     margin-top: 0;
     border: none;
-    grid-row: 1 / 2;
+    grid-row: 2 / 3;
     grid-column: 1 / 2;
     width: 100%;
     display: flex;
@@ -816,8 +868,8 @@ textarea {
   }
 
   .frame44 {
-    height: fit-content;
-    grid-row: 2 / 3;
+    height: auto;
+    grid-row: 3 / 4;
     grid-column: 1 /2;
     width: 100%;
     padding-bottom: 0;
@@ -825,7 +877,7 @@ textarea {
 
   .featured-img {
     width: 90%;
-    height: fit-content;
+    height: auto;
     display: grid;
     grid-template-rows: 0.4fr 1fr;
     grid-template-columns: 1fr 0.8fr;
@@ -852,14 +904,14 @@ textarea {
 
   .block-h2 {
     width: 100%;
-    height: fit-content;
+    height: auto;
     display: flex;
     flex-wrap: nowrap;
   }
 
   .block-p {
     width: 80%;
-    height: fit-content;
+    height: auto;
   }
 
   .block-nav {
@@ -982,9 +1034,12 @@ textarea {
   }
 
   .about-me {
-    margin-top: 0;
+    grid-row: 4 / 5;
+    grid-column: 1 / 2;
+    margin-top: 10px;
+    margin-bottom: 0;
     width: 100%;
-    height: fit-content;
+    height: auto;
     padding: 7vh 0 0 7vw;
     background-image: url("images/Frame.svg");
     background-position: 100% 12%;
@@ -1042,10 +1097,10 @@ textarea {
   footer {
     margin-top: 0;
     width: 100%;
-    height: fit-content;
+    height: auto;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: 0.6fr 0.3fr;
+    grid-template-rows: 0.7fr 0.3fr;
   }
 
   .break {
@@ -1079,7 +1134,7 @@ textarea {
 
   input {
     width: 90%;
-    height: fit-content;
+    height: auto;
   }
 
   .input {

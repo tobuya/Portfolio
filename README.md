@@ -1,72 +1,189 @@
-# Portfolio
-
-> This is a portfolio repository built from a Figma design for desktop and mobile version to demonstrate Responsive Web Design using CSS Flex layout, CSS Grid layout and HTML.
+<a name="readme-top"></a>
 
 
+<div align="center">
 
-## Built With
+  <h1><b>Tobuya Portfolio</b></h1>
+
+</div>
+
+# 📗 Table of Contents
+
+- [📖 About the Project](#about-project)
+  - [🛠 Built With](#built-with)
+    - [Key Features](#key-features)
+  - [🚀 Live Demo](#live-demo)
+- [💻 Getting Started](#getting-started)
+  - [Setup](#setup)
+  - [Prerequisites](#prerequisites)
+  - [Install](#install)
+  - [Usage](#usage)
+  - [Run tests](#run-tests)
+  - [Deployment](#triangular_flag_on_post-deployment)
+- [👥 Authors](#authors)
+- [🔭 Future Features](#future-features)
+- [🤝 Contributing](#contributing)
+- [⭐️ Show your support](#support)
+- [🙏 Acknowledgements](#acknowledgements)
+- [📝 License](#license)
+
+<!-- PROJECT DESCRIPTION -->
+
+# 📖 Portfolio <a name="about-project"></a>
+
+>  This is a portfolio repository built from a Figma design for desktop and mobile version to demonstrate Responsive Web Design using CSS Flex layout, CSS Grid layout and HTML, and added interactivity using JavaScript.
+
+
+## 🛠 Built With <a name="built-with"></a>
 
 - HTML
 - CSS
+- JavaScript
+
+### Key Features <a name="key-features"></a>
+
+- **Responsiveness**
+- **Interactivity**
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+## 🚀 Live Demo <a name="live-demo"></a>
+
+- [Live Demo Link](https://tobuya.github.io/Portfolio/)
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- GETTING STARTED -->
+
+## 💻 Getting Started <a name="getting-started"></a>
+
+To get a local copy up and running, follow these steps.
+
+### Prerequisites
+
+In order to run this project you need:
+
+Install Nodejs by the command:
+
+```sh
+ npm install -g npm
+```
 
 
-## Live Demo
+### Setup
 
-[Click Here To View It Live](https://tobuya.github.io/Portfolio/)
+Clone this repository to your desired folder:
 
 
-## Authors
 
-👤 **Author**
+```sh
+  cd my-desired-folder
+  git clone git@github.com:tobuya/Portfolio.git
+```
+
+### Install
+
+Set up Webhint, Stylelint, and ESLint in your local environment:
+
+
+```sh
+  cd my-desired-folder
+
+  npm install --save-dev hint@7.x
+
+  npm install --save-dev stylelint@13.x stylelint-scss@3.x stylelint-config-standard@21.x stylelint-csstree-validator@1.x
+
+  npm install --save-dev eslint@7.x eslint-config-airbnb-base@14.x eslint-plugin-import@2.x babel-eslint@10.x
+
+```
+
+
+### Usage
+
+- Webhint is acustomizable linting tool that helps you improve your site's accessibility, speed, cross-browser compatibility, and more by checking your code for best practices and common errors.
+
+- Stylelint is a mighty, modern linter that helps you avoid errors and enforce conventions in your styles.
+
+- ESLint is a mighty, modern linter that helps you avoid errors and enforce conventions in your JavaScript.
+
+### Run tests
+
+To run tests, run the following command:
+
+```sh
+  npx hint .
+  npx stylelint "**/*.{css,scss}"
+  npx eslint .
+```
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+
+## 👥 Authors <a name="authors"></a>
+
+> Mention all of the collaborators of this project.
+
+👤 **Author1**
 
 - GitHub: [@githubhandle](https://github.com/tobuya)
 - Twitter: [@twitterhandle](https://twitter.com/MullerTheGreat1)
 - LinkedIn: [LinkedIn](https://www.linkedin.com/in/thomas-obuya-51b49719b/)
 
+👤 **Author2**
 
-## 🤝 Contributing
+- GitHub: [@githubhandle](https://github.com/lengushuru)
+- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
+- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
+
+👤 **Author3**
+
+- GitHub: [@githubhandle](https://github.com/Nezerwa)
+- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
+- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
+
+👤 **Author4**
+
+- GitHub: [@githubhandle](https://github.com/somarib)
+- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
+- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+
+## 🔭 Future Features <a name="future-features"></a>
+
+
+- [ ] **[Details Popup Window]**
+- [ ] **[Contact Form Validation]**
+- [ ] **[Data preserve in the browser]**
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+
+## 🤝 Contributing <a name="contributing"></a>
 
 Contributions, issues, and feature requests are welcome!
 
 Feel free to check the [issues page](../../issues/).
 
-## Get started: Clone this repository to your local machine
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-1. Open GitHub.com, navigate to the main page of the repository.
-
-2. Above the list of files, click **Code**.
-
-![alt text](https://docs.github.com/assets/cb-20363/images/help/repository/code-button.png)
-
-3. Copy the URL for the repository.
-
-- To clone the repository using HTTPS, under "HTTPS", click .
-- To clone the repository using an SSH key, including a certificate issued by your organization's SSH certificate authority, click **SSH**, then click.
-- To clone a repository using **GitHub CLI**, click GitHub CLI, then click 
-
-![alt text](https://docs.github.com/assets/cb-33207/images/help/repository/https-url-clone-cli.png)
-
-4. Open the terminal
-
-5. Change the current working directory to the location where you want the cloned directory.
-
-6. Type *`git clone`*, and then paste the URL you copied earlier.
-   
-   *`$ git clone https://github.com/YOUR-USERNAME/YOUR-REPOSITORY`*
-
-7. Press **Enter** to create your local clone.
-
-## Show your support
+## ⭐️ Show your support <a name="support"></a>
 
 Give a ⭐️ if you like this project!
 
-## Acknowledgments
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-- Microverse
-- Inspiration
-- Coding partners
-- Figma for providing the template
 
-## 📝 License
+## 🙏 Acknowledgments <a name="acknowledgements"></a>
+
+I would like to thank Microverse, my coding partners and the Figma template designer.
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+
+## 📝 License <a name="license"></a>
 
 This project is [MIT](./LICENSE) licensed.
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
