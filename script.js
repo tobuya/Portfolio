@@ -237,3 +237,35 @@ cardBtn.forEach(card => {
 
 multiPostBtnDesktop.addEventListener('click', desktopPopup);
 
+function desktopCardPopup() {
+  body.classList.add('body');
+  modalContainer.classList.add('modal-container');
+  popup.classList.add('desktop-card-popup');
+  popup.innerHTML = `
+  <a class='popup-close-link'>
+    <img class='popup-close-icon' src='images/${projects[0].closeIcon}' alt='Close Icon'/>
+  </a>
+  <img class='desktop-card-img' src='images/${projects[2].featuredImage[1]}' alt='Multi Post Stories'>
+  <div class='popup-btn-container desktop-btn-div desktop-card-div'>
+      <button>
+        <p class='see-text'>${projects[0].seeLiveText}</p>
+        <a href='${projects[0].live}'>
+          <img src='images/${projects[0].seeLiveImg}' alt='See Live Icon'>
+        </a>
+      </button>
+      <button>
+        <p class='see-text'>${projects[0].seeSourceText}</p>
+        <a href='${projects[0].source}'>
+          <img src='images/${projects[0].seeSourceImg}' alt='GitHub Icon'>
+        </a>
+      </button>
+  </div>
+  `
+  modalContainer.appendChild(popup);
+  body.appendChild(modalContainer);
+
+  const close = document.querySelector('.popup-close-link');
+  close.addEventListener('click', () => {
+    window.location.reload(true);
+  });
+}
