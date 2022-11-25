@@ -225,7 +225,10 @@ cardBtn.forEach(card => {
       </a>
     </button>
 </div>
-    `
+   `
+ modalContainer.appendChild(popup);
+  body.appendChild(modalContainer);
+
 
 
   }
