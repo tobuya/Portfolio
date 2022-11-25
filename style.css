@@ -703,6 +703,19 @@ textarea {
   color: #fff;
 }
 
+.popup-btn-container > button {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px;
+  width: 128px;
+  height: 40px;
+  background: #ff6b00;
+  color: #fff;
+  border: none;
+}
+
 .form-btn > button:hover {
   cursor: pointer;
   color: #ff6b00;
@@ -822,21 +835,8 @@ textarea {
   margin-top: 0;
 }
 
-.popup-btn-container > button {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  padding: 12px;
-  width: 128px;
-  height: 40px;
-  background: #ff6b00;
-  color: #fff;
-  border: none;
-}
-
 .see-text {
-  font-family: 'Inter';
+  font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 14px;
@@ -1212,25 +1212,25 @@ textarea {
     padding-left: 10px;
   }
 
-.desktop-project-btn {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 48px;
-  background: #ff6b00;
-  color: #fff;
-  letter-spacing: 0.03em;
-  font-family: 'Inter', sans-serif;
-  font-style: normal;
-  font-weight: 700;
-  font-size: 17px;
-  line-height: 24px;
-  border: none;
-}
+  .desktop-project-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 48px;
+    background: #ff6b00;
+    color: #fff;
+    letter-spacing: 0.03em;
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 17px;
+    line-height: 24px;
+    border: none;
+  }
 
-.action-btn {
-  display: none;
-}
+  .action-btn {
+    display: none;
+  }
 
   .about-me {
     grid-row: 4 / 5;
@@ -1395,16 +1395,16 @@ textarea {
     margin-top: 0;
   }
 
-.desktop-popup-ul > li {
-  font-family: 'Poppins', sans-serif;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 15px;
-  line-height: 20px;
-  color: #3C3A39;
-  border: 1px solid #ebecf0;
-  padding: 8px;
-}
+  .desktop-popup-ul > li {
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 20px;
+    color: #3c3a39;
+    border: 1px solid #ebecf0;
+    padding: 8px;
+  }
 
   .desktop-popup-img {
     grid-row: 3 / 5;
@@ -1449,7 +1449,7 @@ textarea {
     background-color: #dfe1e6;
   }
 
-  .desktop-card-img{
+  .desktop-card-img {
     width: 90vw;
     height: 90vh;
   }
