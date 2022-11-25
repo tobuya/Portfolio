@@ -190,3 +190,8 @@ function artPrintingData() {
 }
 
 multiPostBtn.addEventListener('click', multiPostStories);
+
+cardBtn.forEach(card => {
+    card.addEventListener('click', artPrintingData);
+  });
+
