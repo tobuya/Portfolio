@@ -233,8 +233,7 @@ cardBtn.forEach(card => {
     close.addEventListener('click', () => {
       window.location.reload(true);
     });
-
-
-
-
   }
+
+multiPostBtnDesktop.addEventListener('click', desktopPopup);
+
