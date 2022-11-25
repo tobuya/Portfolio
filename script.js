@@ -209,6 +209,9 @@ cardBtn.forEach(card => {
       <li>${projects[2].technologies[1]}</li>
       <li>${projects[2].technologies[2]}</li>
     </ul>
+    <img class='desktop-popup-img' src='images/${projects[2].featuredImage[0]}' alt='Multi Post Stories'>
+    <p class='desktop-popup-description'>${projects[2].description}</p>
+
     `
 
 
