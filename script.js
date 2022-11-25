@@ -228,6 +228,12 @@ cardBtn.forEach(card => {
    `
  modalContainer.appendChild(popup);
   body.appendChild(modalContainer);
+    
+    const close = document.querySelector('.popup-close-link');
+    close.addEventListener('click', () => {
+      window.location.reload(true);
+    });
+
 
 
 
