@@ -203,6 +203,12 @@ cardBtn.forEach(card => {
     <a class='popup-close-link'>
       <img class='popup-close-icon' src='images/${projects[0].closeIcon}' alt='Close Icon'/>
     </a>
+    <h3 class='desktop-popup-h3'>${projects[2].projectName}</h3>
+    <ul class='desktop-popup-ul'>
+      <li>${projects[2].technologies[0]}</li>
+      <li>${projects[2].technologies[1]}</li>
+      <li>${projects[2].technologies[2]}</li>
+    </ul>
     `
 
 
