@@ -269,3 +269,5 @@ function desktopCardPopup() {
     window.location.reload(true);
   });
 }
+cardBtnDesktop.addEventListener('click', desktopCardPopup);
+
