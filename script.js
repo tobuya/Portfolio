@@ -195,4 +195,9 @@ cardBtn.forEach(card => {
     card.addEventListener('click', artPrintingData);
   });
 
-  function desktopPopup() {}
+  function desktopPopup() {
+    body.classList.add('body');
+    modalContainer.classList.add('modal-container');
+    popup.classList.add('desktop-popup');
+
+  }
