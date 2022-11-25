@@ -199,5 +199,11 @@ cardBtn.forEach(card => {
     body.classList.add('body');
     modalContainer.classList.add('modal-container');
     popup.classList.add('desktop-popup');
+    popup.innerHTML = `
+    <a class='popup-close-link'>
+      <img class='popup-close-icon' src='images/${projects[0].closeIcon}' alt='Close Icon'/>
+    </a>
+    `
+
 
   }
