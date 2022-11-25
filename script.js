@@ -211,7 +211,20 @@ cardBtn.forEach(card => {
     </ul>
     <img class='desktop-popup-img' src='images/${projects[2].featuredImage[0]}' alt='Multi Post Stories'>
     <p class='desktop-popup-description'>${projects[2].description}</p>
-
+    <div class='popup-btn-container desktop-btn-div'>
+    <button>
+      <p class='see-text'>${projects[0].seeLiveText}</p>
+      <a href='${projects[0].live}'>
+        <img src='images/${projects[0].seeLiveImg}' alt='See Live Icon'>
+      </a>
+    </button>
+    <button>
+      <p class='see-text'>${projects[0].seeSourceText}</p>
+      <a href='${projects[0].source}'>
+        <img src='images/${projects[0].seeSourceImg}' alt='GitHub Icon'>
+      </a>
+    </button>
+</div>
     `
 
 
