@@ -77,7 +77,7 @@ aboutLink.addEventListener('click', displayPortfolioSection);
 contactLink.addEventListener('click', displayPortfolioSection);
 cross.addEventListener('click', displayPortfolioSection);
 
-//popup
+// popup
 const projects = [
   {
     projectName: 'Multi-Post Stories',
@@ -90,15 +90,15 @@ const projects = [
     seeLiveImg: 'see-live.svg',
     seeSourceText: 'See Source',
     seeSourceImg: 'see-source.svg',
-    closeIcon: 'icon-cross.svg'
+    closeIcon: 'icon-cross.svg',
   },
   {
-    projectName: `Profesional Art <br> Printing Data`,
+    projectName: 'Profesional Art <br> Printing Data',
     description: 'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry standard',
     featuredImage: 'cardwork.svg',
     technologies: ['html', 'bootstrap', 'Ruby'],
     live: 'https://tobuya.github.io/Portfolio/',
-    source: 'https://github.com/tobuya/Portfolio'
+    source: 'https://github.com/tobuya/Portfolio',
   },
   {
     projectName: 'Keeping track of hundreds  of components website',
@@ -106,8 +106,8 @@ const projects = [
     featuredImage: ['desktop-snap.svg', 'bg-one.svg'],
     technologies: ['html', 'Bootstrap', 'Ruby on rails'],
     live: 'https://tobuya.github.io/Portfolio/',
-    source: 'https://github.com/tobuya/Portfolio'
-  }
+    source: 'https://github.com/tobuya/Portfolio',
+  },
 ];
 
 function multiPostStories() {
@@ -140,7 +140,7 @@ function multiPostStories() {
         </a>
       </button>
   </div>
-  `
+  `;
   modalContainer.appendChild(popup);
   body.appendChild(modalContainer);
 
@@ -179,7 +179,7 @@ function artPrintingData() {
         </a>
       </button>
   </div>
-  `
+  `;
   modalContainer.appendChild(popup);
   body.appendChild(modalContainer);
 
@@ -191,15 +191,15 @@ function artPrintingData() {
 
 multiPostBtn.addEventListener('click', multiPostStories);
 
-cardBtn.forEach(card => {
-    card.addEventListener('click', artPrintingData);
-  });
+cardBtn.forEach((card) => {
+  card.addEventListener('click', artPrintingData);
+});
 
-  function desktopPopup() {
-    body.classList.add('body');
-    modalContainer.classList.add('modal-container');
-    popup.classList.add('desktop-popup');
-    popup.innerHTML = `
+function desktopPopup() {
+  body.classList.add('body');
+  modalContainer.classList.add('modal-container');
+  popup.classList.add('desktop-popup');
+  popup.innerHTML = `
     <a class='popup-close-link'>
       <img class='popup-close-icon' src='images/${projects[0].closeIcon}' alt='Close Icon'/>
     </a>
@@ -225,15 +225,15 @@ cardBtn.forEach(card => {
       </a>
     </button>
 </div>
-   `
- modalContainer.appendChild(popup);
+   `;
+  modalContainer.appendChild(popup);
   body.appendChild(modalContainer);
-    
-    const close = document.querySelector('.popup-close-link');
-    close.addEventListener('click', () => {
-      window.location.reload(true);
-    });
-  }
+
+  const close = document.querySelector('.popup-close-link');
+  close.addEventListener('click', () => {
+    window.location.reload(true);
+  });
+}
 
 multiPostBtnDesktop.addEventListener('click', desktopPopup);
 
@@ -260,7 +260,7 @@ function desktopCardPopup() {
         </a>
       </button>
   </div>
-  `
+  `;
   modalContainer.appendChild(popup);
   body.appendChild(modalContainer);
 
@@ -270,4 +270,3 @@ function desktopCardPopup() {
   });
 }
 cardBtnDesktop.addEventListener('click', desktopCardPopup);
-
