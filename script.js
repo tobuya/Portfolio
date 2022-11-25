@@ -195,3 +195,4 @@ cardBtn.forEach(card => {
     card.addEventListener('click', artPrintingData);
   });
 
+  function desktopPopup() {}
