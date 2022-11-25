@@ -2,6 +2,14 @@ const menuSection = document.querySelector('#header-section');
 const menuAnchor = document.querySelector('.menu');
 const navigation = document.querySelector('.toolbar');
 
+const body = document.querySelector('body');
+const modalContainer = document.createElement('div');
+const popup = document.createElement('div');
+const multiPostBtn = document.querySelector('.right-btn');
+const cardBtn = document.querySelectorAll('.action');
+const multiPostBtnDesktop = document.querySelector('.desktop-btn');
+const cardBtnDesktop = document.querySelector('.desktop-project-btn');
+
 const mobileMenu = document.createElement('div');
 mobileMenu.classList.add('mobile-menu');
 
@@ -68,3 +76,4 @@ portfolioLink.addEventListener('click', displayPortfolioSection);
 aboutLink.addEventListener('click', displayPortfolioSection);
 contactLink.addEventListener('click', displayPortfolioSection);
 cross.addEventListener('click', displayPortfolioSection);
+
