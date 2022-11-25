@@ -109,3 +109,82 @@ const projects = [
     source: 'https://github.com/tobuya/Portfolio'
   }
 ];
+
+function multiPostStories() {
+  body.classList.add('body');
+  modalContainer.classList.add('modal-container');
+  popup.classList.add('popup');
+  popup.innerHTML = `
+  <a class='popup-close-link'>
+    <img class='popup-close-icon' src='images/${projects[0].closeIcon}' alt='Close Icon'/>
+  </a>
+  <h3 class='popup-h3'>${projects[0].projectName}</h3>
+  <ul class='popup-ul'>
+    <li>${projects[0].technologies[0]}</li>
+    <li>${projects[0].technologies[1]}</li>
+    <li>${projects[0].technologies[2]}</li>
+  </ul>
+  <img class='popup-img' src='images/${projects[0].featuredImage}' alt='Multi Post Stories'>
+  <p class='popup-description'>${projects[0].description}</p>
+  <div class='popup-btn-container'>
+      <button>
+        <p class='see-text'>${projects[0].seeLiveText}</p>
+        <a href='${projects[0].live}'>
+          <img src='images/${projects[0].seeLiveImg}' alt='See Live Icon'>
+        </a>
+      </button>
+      <button>
+        <p class='see-text'>${projects[0].seeSourceText}</p>
+        <a href='${projects[0].source}'>
+          <img src='images/${projects[0].seeSourceImg}' alt='GitHub Icon'>
+        </a>
+      </button>
+  </div>
+  `
+  modalContainer.appendChild(popup);
+  body.appendChild(modalContainer);
+
+  const close = document.querySelector('.popup-close-link');
+  close.addEventListener('click', () => {
+    window.location.reload(true);
+  });
+}
+
+function artPrintingData() {
+  body.classList.add('body');
+  modalContainer.classList.add('modal-container');
+  popup.classList.add('popup', 'modal-container-art');
+  popup.innerHTML = `
+  <a class='popup-close-link'>
+    <img class='popup-close-icon' src='images/${projects[0].closeIcon}' alt='Close Icon'>
+  </a>
+  <h3 class='popup-h3 art-h3'>${projects[1].projectName}</h3>
+  <p class='popup-description art-description'>${projects[1].description}</p>
+  <ul class='popup-ul art-ul'>
+    <li>${projects[1].technologies[0]}</li>
+    <li>${projects[1].technologies[1]}</li>
+    <li>${projects[1].technologies[2]}</li>
+  </ul>
+  <div class='popup-btn-container'>
+      <button>
+        <p class='see-text'>${projects[0].seeLiveText}</p>
+        <a href='${projects[1].live}'>
+          <img src='images/${projects[0].seeLiveImg}' alt='See Live Icon'>
+        </a>
+      </button>
+      <button>
+        <p class='see-text'>${projects[0].seeSourceText}</p>
+        <a href='${projects[1].source}'>
+          <img src='images/${projects[0].seeSourceImg}' alt='GitHub Icon'>
+        </a>
+      </button>
+  </div>
+  `
+  modalContainer.appendChild(popup);
+  body.appendChild(modalContainer);
+
+  const close = document.querySelector('.popup-close-link');
+  close.addEventListener('click', () => {
+    window.location.reload(true);
+  });
+}
