@@ -188,3 +188,5 @@ function artPrintingData() {
     window.location.reload(true);
   });
 }
+
+multiPostBtn.addEventListener('click', multiPostStories);
