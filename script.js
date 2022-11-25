@@ -77,3 +77,35 @@ aboutLink.addEventListener('click', displayPortfolioSection);
 contactLink.addEventListener('click', displayPortfolioSection);
 cross.addEventListener('click', displayPortfolioSection);
 
+//popup
+const projects = [
+  {
+    projectName: 'Multi-Post Stories',
+    description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent',
+    featuredImage: 'stories.svg',
+    technologies: ['html', 'Bootstrap', 'Ruby on rails'],
+    live: 'https://tobuya.github.io/Portfolio/',
+    source: 'https://github.com/tobuya/Portfolio',
+    seeLiveText: 'See Live',
+    seeLiveImg: 'see-live.svg',
+    seeSourceText: 'See Source',
+    seeSourceImg: 'see-source.svg',
+    closeIcon: 'icon-cross.svg'
+  },
+  {
+    projectName: `Profesional Art <br> Printing Data`,
+    description: 'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry standard',
+    featuredImage: 'cardwork.svg',
+    technologies: ['html', 'bootstrap', 'Ruby'],
+    live: 'https://tobuya.github.io/Portfolio/',
+    source: 'https://github.com/tobuya/Portfolio'
+  },
+  {
+    projectName: 'Keeping track of hundreds  of components website',
+    description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releax map lapora verita.',
+    featuredImage: ['desktop-snap.svg', 'bg-one.svg'],
+    technologies: ['html', 'Bootstrap', 'Ruby on rails'],
+    live: 'https://tobuya.github.io/Portfolio/',
+    source: 'https://github.com/tobuya/Portfolio'
+  }
+];
