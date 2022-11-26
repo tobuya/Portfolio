@@ -305,3 +305,8 @@ function desktopCardPopup() {
   });
 }
 cardBtnDesktop.addEventListener('click', desktopCardPopup);
+
+//Form validation
+function validateEmail() {
+  const emailAddress = document.getElementById('mail').value;
+}
