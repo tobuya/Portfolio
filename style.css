@@ -351,6 +351,14 @@ hr {
   line-height: 24px;
 }
 
+.desktop-btn {
+  visibility: hidden;
+}
+
+.desktop-project-btn {
+  display: none;
+}
+
 .frame43 {
   display: grid;
   grid-template-rows: repeat(6, 1fr);
@@ -446,6 +454,7 @@ hr {
 }
 
 button.action:hover,
+.desktop-project-btn:hover,
 button.interaction:hover {
   cursor: pointer;
   color: #ff6b00;
@@ -694,6 +703,19 @@ textarea {
   color: #fff;
 }
 
+.popup-btn-container > button {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px;
+  width: 128px;
+  height: 40px;
+  background: #ff6b00;
+  color: #fff;
+  border: none;
+}
+
 .form-btn > button:hover {
   cursor: pointer;
   color: #ff6b00;
@@ -710,6 +732,156 @@ textarea {
   display: flex;
   justify-content: center;
   align-items: flex-end;
+}
+
+.body {
+  z-index: 0;
+}
+
+.modal-container {
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  background-color: #979493;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+}
+
+.popup {
+  width: 98vw;
+  height: 98vh;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  background-color: #fff;
+  padding: 5px 8px;
+}
+
+.popup-close-link {
+  position: absolute;
+  top: 0.005%;
+  right: 10%;
+  cursor: pointer;
+}
+
+.popup-close-icon {
+  align-self: flex-end;
+  margin-top: 20px;
+  margin-right: 20px;
+}
+
+.popup-h3 {
+  width: 259px;
+  height: 82px;
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 38px;
+  color: #172b4d;
+  margin-top: 0;
+  margin-bottom: 5px;
+}
+
+.popup-ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  gap: 10px;
+  width: 311px;
+  padding-left: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.popup-ul > li {
+  border: 1px solid #dfe1e6;
+  padding: 6px;
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 10px;
+  line-height: 12px;
+}
+
+.popup-img {
+  width: 311px;
+  height: 220px;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.popup-description {
+  width: 311px;
+  height: 210px;
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  color: #344563;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.popup-btn-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 311px;
+  margin-top: 0;
+}
+
+.see-text {
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 24px;
+}
+
+.modal-container-art {
+  background-image: url('images/cardwork.svg');
+  background-size: cover;
+  justify-content: space-between;
+  padding: 15px;
+}
+
+.art-h3 {
+  width: 311px;
+  height: 81px;
+  font-family: 'Crete Round', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 36px;
+  line-height: 44px;
+  color: #fff;
+}
+
+.art-description {
+  width: 311px;
+  height: 140px;
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 24px;
+  color: #fff;
+}
+
+.art-ul > li {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  padding: 10px 12px;
+  width: 95px;
+  height: 40px;
+  background: rgba(255, 255, 255, 0.24);
+  border: none;
 }
 
 @media only screen and (min-width: 768px) {
@@ -927,7 +1099,14 @@ textarea {
     height: 70%;
   }
 
+  .interaction,
   .right-btn {
+    display: none;
+  }
+
+  .desktop-btn {
+    visibility: visible;
+    cursor: pointer;
     width: 100%;
     height: 60%;
   }
@@ -1005,7 +1184,7 @@ textarea {
     justify-content: flex-end;
   }
 
-  .hide {
+  .desktop-hide {
     visibility: hidden;
   }
 
@@ -1022,7 +1201,7 @@ textarea {
   }
 
   .btn-hide {
-    visibility: hidden;
+    display: none;
   }
 
   .card-group {
@@ -1031,6 +1210,26 @@ textarea {
     gap: 0;
     padding-top: 110px;
     padding-left: 10px;
+  }
+
+  .desktop-project-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 48px;
+    background: #ff6b00;
+    color: #fff;
+    letter-spacing: 0.03em;
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 17px;
+    line-height: 24px;
+    border: none;
+  }
+
+  .action-btn {
+    display: none;
   }
 
   .about-me {
@@ -1159,5 +1358,105 @@ textarea {
     flex-direction: row;
     align-items: center;
     width: 100%;
+  }
+
+  .desktop-popup {
+    display: grid;
+    grid-template-columns: 0.6fr 0.4fr;
+    grid-template-rows: 0.15fr 0.25fr 0.45fr 0.15fr;
+    gap: 10px;
+    padding: 10px;
+    background-color: #fff;
+  }
+
+  .desktop-popup-h3 {
+    grid-row: 1 / 2;
+    grid-column: 1 / 3;
+    width: 1056px;
+    height: 40px;
+    font-family: 'Crete Round', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 44px;
+    color: #172b4d;
+    margin-bottom: 0;
+  }
+
+  .desktop-popup-ul {
+    grid-row: 2 / 3;
+    grid-column: 1 / 3;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    gap: 20px;
+    padding: 0;
+    margin-bottom: 0;
+    margin-top: 0;
+  }
+
+  .desktop-popup-ul > li {
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 20px;
+    color: #3c3a39;
+    border: 1px solid #ebecf0;
+    padding: 8px;
+  }
+
+  .desktop-popup-img {
+    grid-row: 3 / 5;
+    grid-column: 1 / 2;
+    width: 659px;
+    height: 448px;
+    margin-bottom: 0;
+    margin-top: 5px;
+  }
+
+  .desktop-popup-description {
+    grid-row: 3 / 4;
+    grid-column: 2 / 3;
+    width: 424px;
+    height: 336px;
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 30px;
+    color: #344563;
+    margin-top: 5px;
+    margin-bottom: 0;
+  }
+
+  .desktop-btn-div {
+    grid-row: 4 / 5;
+    grid-column: 2 / 3;
+    justify-content: flex-start;
+    align-items: flex-end;
+    padding-bottom: 7px;
+    gap: 10px;
+    margin-top: 0;
+  }
+
+  .desktop-card-popup {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    justify-content: center;
+    align-items: center;
+    background-color: #dfe1e6;
+  }
+
+  .desktop-card-img {
+    width: 90vw;
+    height: 90vh;
+  }
+
+  .desktop-card-div {
+    width: 90vw;
+    padding: 0 31.2%;
+    justify-content: space-between;
   }
 }
