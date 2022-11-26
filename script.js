@@ -321,3 +321,23 @@ function validateEmail() {
   };
 }
 document.getElementById('button').addEventListener('click', validateEmail);
+
+// Local Storage
+const form = document.querySelector('form');
+const userName = document.getElementById('fname');
+const userEmail = document.getElementById('mail');
+const userMessage = document.getElementById('textarea');
+
+form.addEventListener('input', () => {
+  const userFormData = {
+    username: userName.value,
+    email: userEmail.value,
+    message: userMessage.value,
+  };
+  localStorage.setItem('userData', JSON.stringify(userFormData));
+});
+
+const GetDataFromLocalStorage = JSON.parse(localStorage.getItem('userData'));
+userName.value = GetDataFromLocalStorage.username;
+userEmail.value = GetDataFromLocalStorage.email;
+userMessage.value = GetDataFromLocalStorage.message;
