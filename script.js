@@ -310,5 +310,7 @@ cardBtnDesktop.addEventListener('click', desktopCardPopup);
 function validateEmail() {
   const emailAddress = document.getElementById('mail').value;
   const regularExp = /^([a-z\d-]+)@([a-z\d-]+)\.([a-z]{2,8})(\.[a-z]{2,8})?$/;
+  document.forms[0].onsubmit = function (e) {}
+
 
 }
