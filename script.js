@@ -305,3 +305,19 @@ function desktopCardPopup() {
   });
 }
 cardBtnDesktop.addEventListener('click', desktopCardPopup);
+
+// Form validation
+function validateEmail() {
+  const emailAddress = document.getElementById('mail').value;
+  const regularExp = /^([a-z\d-]+)@([a-z\d-]+)\.([a-z]{2,8})(\.[a-z]{2,8})?$/;
+  document.forms[0].onsubmit = (e) => {
+    if (regularExp.test(emailAddress)) {
+      document.getElementById('error-message').innerHTML = '';
+    } else {
+      document.getElementById('error-message').innerHTML = 'Please enter the email in lower case';
+      document.getElementById('error-message').style.color = 'red';
+      e.preventDefault();
+    }
+  };
+}
+document.getElementById('button').addEventListener('click', validateEmail);
