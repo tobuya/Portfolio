@@ -327,4 +327,13 @@ document.getElementById('button').addEventListener('click', validateEmail);
   const userName = document.getElementById('fname');
   const userEmail = document.getElementById('mail');
   const userMessage = document.getElementById('textarea');
+  form.addEventListener('input', () => {
+    const userFormData = {
+      username: userName.value,
+      email: userEmail.value,
+      message: userMessage.value
+    }
+});
+
+
   
