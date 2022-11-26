@@ -9,6 +9,8 @@ const multiPostBtn = document.querySelector('.right-btn');
 const cardBtn = document.querySelectorAll('.action');
 const multiPostBtnDesktop = document.querySelector('.desktop-btn');
 const cardBtnDesktop = document.querySelector('.desktop-project-btn');
+const multiPostSection = document.querySelector('.right-block');
+const listProjects = document.querySelectorAll('.group');
 
 const mobileMenu = document.createElement('div');
 mobileMenu.classList.add('mobile-menu');
@@ -76,6 +78,39 @@ portfolioLink.addEventListener('click', displayPortfolioSection);
 aboutLink.addEventListener('click', displayPortfolioSection);
 contactLink.addEventListener('click', displayPortfolioSection);
 cross.addEventListener('click', displayPortfolioSection);
+
+window.addEventListener('load', () => {
+  multiPostSection.innerHTML = `   
+  <h2 class="block-h2">Multi-Post Stories</h2>
+  <p class="block-p">A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text.</p>
+  <div class="block-nav">
+      <ul>
+          <li class="nav-list nav-language">css</li>
+          <li class="nav-list nav-language">html</li>
+          <li class="nav-list nav-language" id="bootstrap">bootstrap</li>
+          <li class="nav-list nav-language">Ruby</li>
+      </ul>
+  </div>
+  `;
+  multiPostSection.append(multiPostBtn);
+  multiPostSection.append(multiPostBtnDesktop);
+});
+
+window.addEventListener('load', () => {
+  listProjects.forEach((group) => {
+    group.innerHTML = `
+    <h2 class="group-header hide">Profesional Art <br> Printing Data</h2>
+    <p class="group-para hide">A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard</p>
+    <div>
+        <ul class="group-ul hide">
+            <li class="group-li">html</li>
+            <li class="bootstrap group-li">bootstrap</li>
+            <li class="group-li">Ruby</li>
+        </ul>
+    </div>
+    `;
+  });
+});
 
 // popup
 const projects = [
