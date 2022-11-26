@@ -85,103 +85,33 @@
             <div class="featured-img">
                 <img src="images/placeholder.svg" alt="Featured project">
                 <section class="right-block">
-                    <h2 class="block-h2">Multi-Post Stories</h2>
-                    <p class="block-p">A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text.</p>
-                    <div class="block-nav">
-                        <ul>
-                            <li class="nav-list nav-language">css</li>
-                            <li class="nav-list nav-language">html</li>
-                            <li class="nav-list nav-language" id="bootstrap">bootstrap</li>
-                            <li class="nav-list nav-language">Ruby</li>
-                        </ul>
-                    </div>
                     <button class="interaction right-btn">See Project</button>
                     <button class="desktop-btn">See Project</button>
                 </section>
                 <section class="frame43">
                     <section class="card-work bg-printing">
-                        <div class="group">
-                            <h2 class="group-header hide">Profesional Art <br> Printing Data</h2>
-                            <p class="group-para hide">A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard</p>
-                            <div>
-                                <ul class="group-ul hide">
-                                    <li class="group-li">html</li>
-                                    <li class="bootstrap group-li">bootstrap</li>
-                                    <li class="group-li">Ruby</li>
-                                </ul>
-                            </div>
-                        </div>
+                        <div class="group desktop-hide"></div>
                         <button class="action action-btn">See Project</button>
                         <button class="desktop-project-btn">See Project</button>
                     </section>
                     <section class="card-work bg-availability">
-                        <div class="group card-group">
-                            <h2 class="group-header">Profesional Art <br> Printing Data</h2>
-                            <p class="group-para">A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard</p>
-                            <div>
-                                <ul class="group-ul">
-                                    <li class="group-li ruby-html">html</li>
-                                    <li class="bootstrap group-li">bootstrap</li>
-                                    <li class="group-li ruby-html">Ruby</li>
-                                </ul>
-                            </div>
-                        </div>
+                        <div class="group card-group"></div>
                         <button class="action btn-hide">See Project</button>
                     </section>
                     <section class="card-work background">
-                        <div class="group card-group">
-                            <h2 class="group-header">Profesional Art <br> Printing Data</h2>
-                            <p class="group-para">A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard</p>
-                            <div>
-                                <ul class="group-ul">
-                                    <li class="group-li ruby-html">html</li>
-                                    <li class="bootstrap group-li">bootstrap</li>
-                                    <li class="group-li ruby-html">Ruby</li>
-                                </ul>
-                            </div>
-                        </div>
+                        <div class="group card-group"></div>
                         <button class="action btn-hide">See Project</button>
                     </section>
                     <section class="card-work bg-print">
-                        <div class="group card-group">
-                            <h2 class="group-header">Profesional Art <br> Printing Data</h2>
-                            <p class="group-para">A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard</p>
-                            <div>
-                                <ul class="group-ul">
-                                    <li class="group-li ruby-html">html</li>
-                                    <li class="bootstrap group-li">bootstrap</li>
-                                    <li class="group-li ruby-html">Ruby</li>
-                                </ul>
-                            </div>
-                        </div>
+                        <div class="group card-group"></div>
                         <button class="action btn-hide">See Project</button>
                     </section>
                     <section class="card-work bg-availability">
-                        <div class="group card-group">
-                            <h2 class="group-header">Profesional Art <br> Printing Data</h2>
-                            <p class="group-para">A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard</p>
-                            <div>
-                                <ul class="group-ul">
-                                    <li class="group-li ruby-html">html</li>
-                                    <li class="bootstrap group-li">bootstrap</li>
-                                    <li class="group-li ruby-html">Ruby</li>
-                                </ul>
-                            </div>
-                        </div>
+                        <div class="group card-group"></div> 
                         <button class="action btn-hide">See Project</button>
                     </section>
                     <section class="card-work background">
-                        <div class="group card-group">
-                            <h2 class="group-header">Profesional Art <br> Printing Data</h2>
-                            <p class="group-para">A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard</p>
-                            <div>
-                                <ul class="group-ul">
-                                    <li class="group-li ruby-html">html</li>
-                                    <li class="bootstrap group-li">bootstrap</li>
-                                    <li class="group-li ruby-html">Ruby</li>
-                                </ul>
-                            </div>
-                        </div>
+                        <div class="group card-group"></div>
                         <button class="action btn-hide">See Project</button>
                     </section>
                 </section>
@@ -228,7 +158,7 @@
      </main>
      <footer id="contact-me">
         <p class="footer-para">I'm always <br class="break"> interested in hearing about new projects, so if you'd like to chat please get in touch.</p>
-        <form action="https://formspree.io/f/xqkjwqqq" method="POST" id="get-in-touch">
+        <form action="https://formspree.io/f/xqkjwqqq" method="POST" id="chat">
             <div class="form-div">
                 <label for="fname" class="input label">
                     <input type="text" id="fname" name="name" placeholder="Full name" required maxlength="30">
@@ -236,11 +166,12 @@
                 <label for="mail" class="input label">
                     <input type="email" id="mail" name="email" placeholder="Email address" required>
                 </label>
+                <p id="error-message"></p>
                 <label for="textarea" class="label">
                     <textarea name="message" id="textarea" placeholder="Enter text here" required maxlength="500"></textarea>
                 </label>
                 <label for="button" class="form-btn label">
-                    <button type="submit" id="button">Get in touch</button>
+                    <button onclick="validateEmail()" type="submit" id="button">Get in touch</button>
                 </label>
             </div>
         </form>
