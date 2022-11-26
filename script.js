@@ -321,3 +321,10 @@ function validateEmail() {
   };
 }
 document.getElementById('button').addEventListener('click', validateEmail);
+
+  //Local Storage
+  const form = document.querySelector('form');
+  const userName = document.getElementById('fname');
+  const userEmail = document.getElementById('mail');
+  const userMessage = document.getElementById('textarea');
+  
