@@ -333,6 +333,7 @@ document.getElementById('button').addEventListener('click', validateEmail);
       email: userEmail.value,
       message: userMessage.value
     }
+    localStorage.setItem('userData', JSON.stringify(userFormData));
 });
 
 
