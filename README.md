@@ -153,9 +153,9 @@ To run tests, run the following command:
 ## 🔭 Future Features <a name="future-features"></a>
 
 
-- [ ] **[Details Popup Window]**
-- [ ] **[Contact Form Validation]**
-- [ ] **[Data preserve in the browser]**
+- [ ] **[Add Data Science Exhibition Project]**
+- [ ] **[Add Microverse Capstone Project 2]**
+- [ ] **[Add Microverse Capstone Project 3]**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
