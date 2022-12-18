@@ -13,6 +13,7 @@ body {
   display: flex;
   flex-direction: column;
   gap: 0;
+  max-width: 767px;
 }
 
 ul,
@@ -31,7 +32,7 @@ a {
   justify-content: flex-start;
   align-items: center;
   height: 100%;
-  width: 390px;
+  width: 100%;
   padding-top: 30px;
   background: #3c3a39;
   z-index: 1;
@@ -70,7 +71,7 @@ a {
 }
 
 header {
-  width: 390px;
+  max-width: 767px;
   height: auto;
   background-color: #3c3a39;
 }
@@ -80,7 +81,7 @@ header {
   justify-content: flex-start;
   align-items: center;
   padding: 20px;
-  width: 390px;
+  max-width: 767px;
 }
 
 .white-color {
@@ -129,7 +130,8 @@ header {
   padding: 120px 24px;
   margin-bottom: 0;
   gap: 12px;
-  width: 390px;
+  width: 100%;
+  /* max-width: 767px; */
   height: 590px;
   background-color: #1c1a19;
   background-image: url(images/headline-background.svg);
@@ -885,8 +887,12 @@ textarea {
 }
 
 @media only screen and (min-width: 768px) {
+  body {
+    max-width: 100%;
+  }
+
   header {
-    width: 100%;
+    max-width: 100%;
     height: auto;
     margin-bottom: 0;
     position: sticky;
@@ -917,7 +923,7 @@ textarea {
   }
 
   .toolbar {
-    width: 100%;
+    max-width: 100%;
     padding: 5px 100px;
   }
 
@@ -951,7 +957,7 @@ textarea {
 
   .headline {
     margin-top: 0;
-    width: 100%;
+    max-width: 100%;
     height: 100vh;
     display: flex;
     flex-direction: row;
