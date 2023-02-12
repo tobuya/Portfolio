@@ -9,23 +9,23 @@
 
 # 📗 Table of Contents
 
-- [📖 About the Project](#about-project)
-  - [🛠 Built With](#built-with)
-    - [Key Features](#key-features)
-  - [🚀 Live Demo](#live-demo)
-- [💻 Getting Started](#getting-started)
-  - [Setup](#setup)
-  - [Prerequisites](#prerequisites)
-  - [Install](#install)
-  - [Usage](#usage)
-  - [Run tests](#run-tests)
-  - [Deployment](#triangular_flag_on_post-deployment)
-- [👥 Authors](#authors)
-- [🔭 Future Features](#future-features)
-- [🤝 Contributing](#contributing)
-- [⭐️ Show your support](#support)
-- [🙏 Acknowledgements](#acknowledgements)
-- [📝 License](#license)
+- [📗 Table of Contents](#-table-of-contents)
+- [📖 Portfolio ](#-portfolio-)
+  - [🛠 Built With ](#-built-with-)
+    - [Key Features ](#key-features-)
+  - [🚀 Live Demo ](#-live-demo-)
+  - [💻 Getting Started ](#-getting-started-)
+    - [Prerequisites](#prerequisites)
+    - [Setup](#setup)
+    - [Install](#install)
+    - [Usage](#usage)
+    - [Run tests](#run-tests)
+  - [👥 Authors ](#-authors-)
+  - [🔭 Future Features ](#-future-features-)
+  - [🤝 Contributing ](#-contributing-)
+  - [⭐️ Show your support ](#️-show-your-support-)
+  - [🙏 Acknowledgments ](#-acknowledgments-)
+  - [📝 License ](#-license-)
 
 <!-- PROJECT DESCRIPTION -->
 
@@ -123,25 +123,25 @@ To run tests, run the following command:
 
 > Mention all of the collaborators of this project.
 
-👤 **Author1**
+👤 **Thomas Obuya**
 
 - GitHub: [@githubhandle](https://github.com/tobuya)
 - Twitter: [@twitterhandle](https://twitter.com/MullerTheGreat1)
-- LinkedIn: [LinkedIn](https://www.linkedin.com/in/thomas-obuya-51b49719b/)
+- LinkedIn: [LinkedIn](https://www.linkedin.com/in/tobuya/)
 
-👤 **Author2**
+👤 **Nezerwa Eligrand**
 
 - GitHub: [@githubhandle](https://github.com/lengushuru)
 - Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
 - LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
 
-👤 **Author3**
+👤 **Lengushuru Charles**
 
 - GitHub: [@githubhandle](https://github.com/Nezerwa)
 - Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
 - LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
 
-👤 **Author4**
+👤 **Emmanuel Somarib**
 
 - GitHub: [@githubhandle](https://github.com/somarib)
 - Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
