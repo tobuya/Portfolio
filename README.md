@@ -121,8 +121,6 @@ To run tests, run the following command:
 
 ## 👥 Authors <a name="authors"></a>
 
-> Mention all of the collaborators of this project.
-
 👤 **Thomas Obuya**
 
 - GitHub: [@githubhandle](https://github.com/tobuya)
