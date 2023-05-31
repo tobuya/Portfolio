@@ -50,6 +50,11 @@ a {
   padding: 0;
 }
 
+.icons:hover {
+  color: #ff6b00;
+  font-size: larger;
+}
+
 .menu-text {
   font-family: 'Inter', sans-serif;
   font-style: normal;
@@ -87,13 +92,6 @@ header {
   color: #fff;
 }
 
-.logo-placeholder {
-  display: flex;
-  align-items: center;
-  width: 101px;
-  height: 44px;
-}
-
 .name {
   font-family: 'Roboto', sans-serif;
   font-style: normal;
@@ -107,8 +105,6 @@ header {
   display: flex;
   align-items: center;
   justify-content: flex-end;
-  width: 60px;
-  height: 44px;
 }
 
 .desktop-menu-placeholder {
@@ -228,8 +224,8 @@ hr {
 }
 
 .frame44 {
-  display: grid;
-  grid-template-rows: 1fr;
+  display: flex;
+  flex-direction: column;
   justify-items: center;
   padding: 0 12px;
   gap: 24px;
@@ -862,6 +858,12 @@ textarea {
 
   .mobile-menu {
     display: none;
+  }
+
+  .flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 
   .name {
