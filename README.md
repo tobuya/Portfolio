@@ -1,11 +1,10 @@
 <a name="readme-top"></a>
 
-
-<div align="center">
-
-  <h1><b>Tobuya Portfolio</b></h1>
-
-</div>
+[![Contributors](https://img.shields.io/github/contributors/tobuya/Portfolio)](https://github.com/tobuya/Portfolio/graphs/contributors)
+[![LastUpdate](https://img.shields.io/github/last-commit/tobuya/Portfolio)](https://github.com/tobuya/Portfolio/commits/dev)
+[![Stargazers](https://img.shields.io/github/stars/tobuya/Portfolio)](https://github.com/tobuya/Portfolio/stargazers)
+[![Issues](https://img.shields.io/github/issues/tobuya/Portfolio)](https://github.com/tobuya/Portfolio/issues)
+[![License](https://img.shields.io/github/license/tobuya/Portfolio)](https://github.com/tobuya/Portfolio/blob/main/LICENSE)
 
 # 📗 Table of Contents
 
