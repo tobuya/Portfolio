@@ -79,38 +79,21 @@ aboutLink.addEventListener('click', displayPortfolioSection);
 contactLink.addEventListener('click', displayPortfolioSection);
 cross.addEventListener('click', displayPortfolioSection);
 
-window.addEventListener('load', () => {
-  multiPostSection.innerHTML = `
-  <h2 class="block-h2">Multi-Post Stories</h2>
-  <p class="block-p">A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text.</p>
-  <div class="block-nav">
-      <ul>
-          <li class="nav-list nav-language">css</li>
-          <li class="nav-list nav-language">html</li>
-          <li class="nav-list nav-language" id="bootstrap">bootstrap</li>
-          <li class="nav-list nav-language">Ruby</li>
-      </ul>
-  </div>
-  `;
-  multiPostSection.append(multiPostBtn);
-  multiPostSection.append(multiPostBtnDesktop);
-});
-
-window.addEventListener('load', () => {
-  listProjects.forEach((group) => {
-    group.innerHTML = `
-    <h2 class="group-header hide">Profesional Art <br> Printing Data</h2>
-    <p class="group-para hide">A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard</p>
-    <div>
-        <ul class="group-ul hide">
-            <li class="group-li">html</li>
-            <li class="bootstrap group-li">bootstrap</li>
-            <li class="group-li">Ruby</li>
-        </ul>
-    </div>
-    `;
-  });
-});
+// window.addEventListener('load', () => {
+//   listProjects.forEach((group) => {
+//     group.innerHTML = `
+//     <h2 class="group-header hide">Profesional Art <br> Printing Data</h2>
+//     <p class="group-para hide">A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard</p>
+//     <div>
+//         <ul class="group-ul hide">
+//             <li class="group-li">html</li>
+//             <li class="bootstrap group-li">bootstrap</li>
+//             <li class="group-li">Ruby</li>
+//         </ul>
+//     </div>
+//     `;
+//   });
+// });
 
 // popup
 const projects = [
@@ -138,7 +121,7 @@ const projects = [
   {
     projectName: 'Space Travelers Hub',
     description: 'This application is based on real life data from SpaceX API. It allows users to book a rocket and join a selected mission.',
-    featuredImage: ['desktop-snap.svg', 'bg-one.svg'],
+    featuredImage: 'cardwork.svg',
     technologies: ['React', 'Redux', 'React Bootstrap'],
     live: 'https://tobuya.github.io/Portfolio/',
     source: 'https://github.com/tobuya/space_travelers_hub',
@@ -177,166 +160,206 @@ const projects = [
   },
 ];
 
-function multiPostStories() {
-  body.classList.add('body');
-  modalContainer.classList.add('modal-container');
-  popup.classList.add('popup');
-  popup.innerHTML = `
-  <a class='popup-close-link'>
-    <img class='popup-close-icon' src='images/${projects[0].closeIcon}' alt='Close Icon'/>
-  </a>
-  <h3 class='popup-h3'>${projects[0].projectName}</h3>
-  <ul class='popup-ul'>
-    <li>${projects[0].technologies[0]}</li>
-    <li>${projects[0].technologies[1]}</li>
-    <li>${projects[0].technologies[2]}</li>
-  </ul>
-  <img class='popup-img' src='images/${projects[0].featuredImage}' alt='Multi Post Stories'>
-  <p class='popup-description'>${projects[0].description}</p>
-  <div class='popup-btn-container'>
-      <button>
-        <p class='see-text'>${projects[0].seeLiveText}</p>
-        <a href='${projects[0].live}'>
-          <img src='images/${projects[0].seeLiveImg}' alt='See Live Icon'>
-        </a>
-      </button>
-      <button>
-        <p class='see-text'>${projects[0].seeSourceText}</p>
-        <a href='${projects[0].source}'>
-          <img src='images/${projects[0].seeSourceImg}' alt='GitHub Icon'>
-        </a>
-      </button>
+window.addEventListener('load', () => {
+  let languages = '';
+  projects[0].technologies.forEach((language) => {
+    languages += `
+    <li class="group-li">${language}</li>
+    `
+  })
+  multiPostSection.innerHTML = `
+  <h2 class="block-h2">${projects[0].projectName}</h2>
+  <p class="block-p">${projects[0].description}</p>
+  <div class="block-nav">
+      <ul>
+         ${languages}
+      </ul>
   </div>
   `;
-  modalContainer.appendChild(popup);
-  body.appendChild(modalContainer);
-
-  const close = document.querySelector('.popup-close-link');
-  close.addEventListener('click', () => {
-    window.location.reload(true);
-  });
-}
-
-function artPrintingData() {
-  body.classList.add('body');
-  modalContainer.classList.add('modal-container');
-  popup.classList.add('popup', 'modal-container-art');
-  popup.innerHTML = `
-  <a class='popup-close-link'>
-    <img class='popup-close-icon' src='images/${projects[0].closeIcon}' alt='Close Icon'>
-  </a>
-  <h3 class='popup-h3 art-h3'>${projects[1].projectName}</h3>
-  <p class='popup-description art-description'>${projects[1].description}</p>
-  <ul class='popup-ul art-ul'>
-    <li>${projects[1].technologies[0]}</li>
-    <li>${projects[1].technologies[1]}</li>
-    <li>${projects[1].technologies[2]}</li>
-  </ul>
-  <div class='popup-btn-container'>
-      <button>
-        <p class='see-text'>${projects[0].seeLiveText}</p>
-        <a href='${projects[1].live}'>
-          <img src='images/${projects[0].seeLiveImg}' alt='See Live Icon'>
-        </a>
-      </button>
-      <button>
-        <p class='see-text'>${projects[0].seeSourceText}</p>
-        <a href='${projects[1].source}'>
-          <img src='images/${projects[0].seeSourceImg}' alt='GitHub Icon'>
-        </a>
-      </button>
-  </div>
-  `;
-  modalContainer.appendChild(popup);
-  body.appendChild(modalContainer);
-
-  const close = document.querySelector('.popup-close-link');
-  close.addEventListener('click', () => {
-    window.location.reload(true);
-  });
-}
-
-multiPostBtn.addEventListener('click', multiPostStories);
-
-cardBtn.forEach((card) => {
-  card.addEventListener('click', artPrintingData);
+  multiPostSection.append(multiPostBtn);
+  multiPostSection.append(multiPostBtnDesktop);
 });
 
-function desktopPopup() {
-  body.classList.add('body');
-  modalContainer.classList.add('modal-container');
-  popup.classList.add('desktop-popup');
-  popup.innerHTML = `
-    <a class='popup-close-link'>
-      <img class='popup-close-icon' src='images/${projects[0].closeIcon}' alt='Close Icon'/>
-    </a>
-    <h3 class='desktop-popup-h3'>${projects[2].projectName}</h3>
-    <ul class='desktop-popup-ul'>
-      <li>${projects[2].technologies[0]}</li>
-      <li>${projects[2].technologies[1]}</li>
-      <li>${projects[2].technologies[2]}</li>
+listProjects.innerHTML = '';
+for(let i = 1; i < projects.length; i++) {
+  let languages = '';
+  projects[i].technologies.forEach((language) => {
+    languages += `
+    <li class="group-li">${language}</li>
+    `
+  })
+  listProjects[i].innerHTML = `
+  <div>
+    <h2 class="group-header hide">${projects[i].projectName}</h2>
+    <p class="group-para hide">${projects[i].description}</p>
+    <ul class="group-ul hide">
+        ${languages}
     </ul>
-    <img class='desktop-popup-img' src='images/${projects[2].featuredImage[0]}' alt='Multi Post Stories'>
-    <p class='desktop-popup-description'>${projects[2].description}</p>
-    <div class='popup-btn-container desktop-btn-div'>
-    <button>
-      <p class='see-text'>${projects[0].seeLiveText}</p>
-      <a href='${projects[0].live}'>
-        <img src='images/${projects[0].seeLiveImg}' alt='See Live Icon'>
-      </a>
-    </button>
-    <button>
-      <p class='see-text'>${projects[0].seeSourceText}</p>
-      <a href='${projects[0].source}'>
-        <img src='images/${projects[0].seeSourceImg}' alt='GitHub Icon'>
-      </a>
-    </button>
-</div>
-   `;
-  modalContainer.appendChild(popup);
-  body.appendChild(modalContainer);
-
-  const close = document.querySelector('.popup-close-link');
-  close.addEventListener('click', () => {
-    window.location.reload(true);
-  });
-}
-
-multiPostBtnDesktop.addEventListener('click', desktopPopup);
-
-function desktopCardPopup() {
-  body.classList.add('body');
-  modalContainer.classList.add('modal-container');
-  popup.classList.add('desktop-card-popup');
-  popup.innerHTML = `
-  <a class='popup-close-link'>
-    <img class='popup-close-icon' src='images/${projects[0].closeIcon}' alt='Close Icon'/>
-  </a>
-  <img class='desktop-card-img' src='images/${projects[2].featuredImage[1]}' alt='Multi Post Stories'>
-  <div class='popup-btn-container desktop-btn-div desktop-card-div'>
-      <button>
-        <p class='see-text'>${projects[0].seeLiveText}</p>
-        <a href='${projects[0].live}'>
-          <img src='images/${projects[0].seeLiveImg}' alt='See Live Icon'>
-        </a>
-      </button>
-      <button>
-        <p class='see-text'>${projects[0].seeSourceText}</p>
-        <a href='${projects[0].source}'>
-          <img src='images/${projects[0].seeSourceImg}' alt='GitHub Icon'>
-        </a>
-      </button>
+    <button type='button' class="action">See this Project<i class="fa fa-arrow-right"></i></button>
   </div>
-  `;
-  modalContainer.appendChild(popup);
-  body.appendChild(modalContainer);
-
-  const close = document.querySelector('.popup-close-link');
-  close.addEventListener('click', () => {
-    window.location.reload(true);
-  });
+   `
 }
-cardBtnDesktop.addEventListener('click', desktopCardPopup);
+
+// function multiPostStories() {
+//   body.classList.add('body');
+//   modalContainer.classList.add('modal-container');
+//   popup.classList.add('popup');
+//   popup.innerHTML = `
+//   <a class='popup-close-link'>
+//     <img class='popup-close-icon' src='images/${projects[0].closeIcon}' alt='Close Icon'/>
+//   </a>
+//   <h3 class='popup-h3'>${projects[0].projectName}</h3>
+//   <ul class='popup-ul'>
+//     <li>${projects[0].technologies[0]}</li>
+//     <li>${projects[0].technologies[1]}</li>
+//     <li>${projects[0].technologies[2]}</li>
+//   </ul>
+//   <img class='popup-img' src='images/${projects[0].featuredImage}' alt='Multi Post Stories'>
+//   <p class='popup-description'>${projects[0].description}</p>
+//   <div class='popup-btn-container'>
+//       <button>
+//         <p class='see-text'>${projects[0].seeLiveText}</p>
+//         <a href='${projects[0].live}'>
+//           <img src='images/${projects[0].seeLiveImg}' alt='See Live Icon'>
+//         </a>
+//       </button>
+//       <button>
+//         <p class='see-text'>${projects[0].seeSourceText}</p>
+//         <a href='${projects[0].source}'>
+//           <img src='images/${projects[0].seeSourceImg}' alt='GitHub Icon'>
+//         </a>
+//       </button>
+//   </div>
+//   `;
+//   modalContainer.appendChild(popup);
+//   body.appendChild(modalContainer);
+
+//   const close = document.querySelector('.popup-close-link');
+//   close.addEventListener('click', () => {
+//     window.location.reload(true);
+//   });
+// }
+
+// function artPrintingData() {
+//   body.classList.add('body');
+//   modalContainer.classList.add('modal-container');
+//   popup.classList.add('popup', 'modal-container-art');
+//   popup.innerHTML = `
+//   <a class='popup-close-link'>
+//     <img class='popup-close-icon' src='images/${projects[0].closeIcon}' alt='Close Icon'>
+//   </a>
+//   <h3 class='popup-h3 art-h3'>${projects[1].projectName}</h3>
+//   <p class='popup-description art-description'>${projects[1].description}</p>
+//   <ul class='popup-ul art-ul'>
+//     <li>${projects[1].technologies[0]}</li>
+//     <li>${projects[1].technologies[1]}</li>
+//     <li>${projects[1].technologies[2]}</li>
+//   </ul>
+//   <div class='popup-btn-container'>
+//       <button>
+//         <p class='see-text'>${projects[0].seeLiveText}</p>
+//         <a href='${projects[1].live}'>
+//           <img src='images/${projects[0].seeLiveImg}' alt='See Live Icon'>
+//         </a>
+//       </button>
+//       <button>
+//         <p class='see-text'>${projects[0].seeSourceText}</p>
+//         <a href='${projects[1].source}'>
+//           <img src='images/${projects[0].seeSourceImg}' alt='GitHub Icon'>
+//         </a>
+//       </button>
+//   </div>
+//   `;
+//   modalContainer.appendChild(popup);
+//   body.appendChild(modalContainer);
+
+//   const close = document.querySelector('.popup-close-link');
+//   close.addEventListener('click', () => {
+//     window.location.reload(true);
+//   });
+// }
+
+// multiPostBtn.addEventListener('click', multiPostStories);
+
+// cardBtn.forEach((card) => {
+//   card.addEventListener('click', artPrintingData);
+// });
+
+// function desktopPopup() {
+//   body.classList.add('body');
+//   modalContainer.classList.add('modal-container');
+//   popup.classList.add('desktop-popup');
+//   popup.innerHTML = `
+//     <a class='popup-close-link'>
+//       <img class='popup-close-icon' src='images/${projects[0].closeIcon}' alt='Close Icon'/>
+//     </a>
+//     <h3 class='desktop-popup-h3'>${projects[2].projectName}</h3>
+//     <ul class='desktop-popup-ul'>
+//       <li>${projects[2].technologies[0]}</li>
+//       <li>${projects[2].technologies[1]}</li>
+//       <li>${projects[2].technologies[2]}</li>
+//     </ul>
+//     <img class='desktop-popup-img' src='images/${projects[2].featuredImage[0]}' alt='Multi Post Stories'>
+//     <p class='desktop-popup-description'>${projects[2].description}</p>
+//     <div class='popup-btn-container desktop-btn-div'>
+//     <button>
+//       <p class='see-text'>${projects[0].seeLiveText}</p>
+//       <a href='${projects[0].live}'>
+//         <img src='images/${projects[0].seeLiveImg}' alt='See Live Icon'>
+//       </a>
+//     </button>
+//     <button>
+//       <p class='see-text'>${projects[0].seeSourceText}</p>
+//       <a href='${projects[0].source}'>
+//         <img src='images/${projects[0].seeSourceImg}' alt='GitHub Icon'>
+//       </a>
+//     </button>
+// </div>
+//    `;
+//   modalContainer.appendChild(popup);
+//   body.appendChild(modalContainer);
+
+//   const close = document.querySelector('.popup-close-link');
+//   close.addEventListener('click', () => {
+//     window.location.reload(true);
+//   });
+// }
+
+// multiPostBtnDesktop.addEventListener('click', desktopPopup);
+
+// function desktopCardPopup() {
+//   body.classList.add('body');
+//   modalContainer.classList.add('modal-container');
+//   popup.classList.add('desktop-card-popup');
+//   popup.innerHTML = `
+//   <a class='popup-close-link'>
+//     <img class='popup-close-icon' src='images/${projects[0].closeIcon}' alt='Close Icon'/>
+//   </a>
+//   <img class='desktop-card-img' src='images/${projects[2].featuredImage[1]}' alt='Multi Post Stories'>
+//   <div class='popup-btn-container desktop-btn-div desktop-card-div'>
+//       <button>
+//         <p class='see-text'>${projects[0].seeLiveText}</p>
+//         <a href='${projects[0].live}'>
+//           <img src='images/${projects[0].seeLiveImg}' alt='See Live Icon'>
+//         </a>
+//       </button>
+//       <button>
+//         <p class='see-text'>${projects[0].seeSourceText}</p>
+//         <a href='${projects[0].source}'>
+//           <img src='images/${projects[0].seeSourceImg}' alt='GitHub Icon'>
+//         </a>
+//       </button>
+//   </div>
+//   `;
+//   modalContainer.appendChild(popup);
+//   body.appendChild(modalContainer);
+
+//   const close = document.querySelector('.popup-close-link');
+//   close.addEventListener('click', () => {
+//     window.location.reload(true);
+//   });
+// }
+// cardBtnDesktop.addEventListener('click', desktopCardPopup);
 
 // Form validation
 function validateEmail() {
