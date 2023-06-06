@@ -165,8 +165,8 @@ window.addEventListener('load', () => {
   projects[0].technologies.forEach((language) => {
     languages += `
     <li class="group-li">${language}</li>
-    `
-  })
+    `;
+  });
   multiPostSection.innerHTML = `
   <h2 class="block-h2">${projects[0].projectName}</h2>
   <p class="block-p">${projects[0].description}</p>
@@ -181,13 +181,13 @@ window.addEventListener('load', () => {
 });
 
 listProjects.innerHTML = '';
-for(let i = 1; i < projects.length; i++) {
+for (let i = 1; i < projects.length; i++) {
   let languages = '';
   projects[i].technologies.forEach((language) => {
     languages += `
     <li class="group-li">${language}</li>
-    `
-  })
+    `;
+  });
   listProjects[i].innerHTML = `
   <div>
     <h2 class="group-header hide">${projects[i].projectName}</h2>
@@ -197,7 +197,7 @@ for(let i = 1; i < projects.length; i++) {
     </ul>
     <button type='button' class="action">See this Project<i class="fa fa-arrow-right"></i></button>
   </div>
-   `
+   `;
 }
 
 // function multiPostStories() {
