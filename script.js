@@ -99,10 +99,12 @@ cross.addEventListener('click', displayPortfolioSection);
 const projects = [
   {
     projectName: 'E-Learning Academy',
-    description: 'E-learning platform where users can reserve online classes to schedule study sessions with learners in their area',
+    description: 'E-learning platform where users can reserve online classes to schedule study sessions with learners in their area.'
+                 + 'By bridging the gap between virtual learning and real-world interactions, '
+                 + 'ClassUp creates a vibrant and collaborative learning environment for students of all backgrounds.',
     featuredImage: 'stories.svg',
     technologies: ['React', 'Redux', 'Bootstrap', 'Ruby on Rails', 'PostgreSQL'],
-    live: 'https://tobuya.github.io/Portfolio/',
+    live: 'https://classup.onrender.com/',
     source: 'https://github.com/tobuya/e-learning-academy',
     seeLiveText: 'See Live',
     seeLiveImg: 'see-live.svg',
@@ -117,14 +119,6 @@ const projects = [
     technologies: ['Ruby on Rails', 'CSS', 'PostgreSQL'],
     live: 'https://tobuya.github.io/Portfolio/',
     source: 'https://github.com/tobuya/kitchen-genie',
-  },
-  {
-    projectName: 'Space Travelers Hub',
-    description: 'This application is based on real life data from SpaceX API. It allows users to book a rocket and join a selected mission.',
-    featuredImage: 'cardwork.svg',
-    technologies: ['React', 'Redux', 'React Bootstrap'],
-    live: 'https://tobuya.github.io/Portfolio/',
-    source: 'https://github.com/tobuya/space_travelers_hub',
   },
   {
     projectName: 'Budget Tracker',
@@ -158,6 +152,14 @@ const projects = [
     live: 'https://tobuya.github.io/Portfolio/',
     source: 'https://github.com/tobuya/Data-Science-Exhibition',
   },
+  {
+    projectName: 'Space Travelers Hub',
+    description: 'This application is based on real life data from SpaceX API. It allows users to book a rocket and join a selected mission.',
+    featuredImage: 'cardwork.svg',
+    technologies: ['React', 'Redux', 'React Bootstrap'],
+    live: 'https://tobuya.github.io/Portfolio/',
+    source: 'https://github.com/tobuya/space_travelers_hub',
+  },
 ];
 
 window.addEventListener('load', () => {
@@ -181,7 +183,7 @@ window.addEventListener('load', () => {
 });
 
 listProjects.innerHTML = '';
-for (let i = 1; i < projects.length; i++) {
+for (let i = 1; i < projects.length; i += 1) {
   let languages = '';
   projects[i].technologies.forEach((language) => {
     languages += `
