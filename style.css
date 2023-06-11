@@ -1,3 +1,12 @@
+:root {
+  --dark: #3c3a39;
+  --darker: #1c1a19;
+  --yellow: #ff6b00;
+  --light: #fff5e1;
+  --lighter: #e5e5e5;
+  --white: #fff;
+}
+
 * {
   box-sizing: border-box;
 }
@@ -10,9 +19,16 @@
 body {
   margin: 0;
   padding: 0;
+}
+
+.flex-column {
   display: flex;
   flex-direction: column;
-  gap: 0;
+}
+
+.flex-row {
+  display: flex;
+  flex-direction: row;
 }
 
 ul,
@@ -32,8 +48,8 @@ a {
   align-items: center;
   height: 100%;
   width: 100%;
-  padding-top: 30px;
-  background: #3c3a39;
+  padding-top: 3rem;
+  background: var(--dark);
   z-index: 1;
 }
 
@@ -45,9 +61,14 @@ a {
   display: flex;
   flex-direction: column;
   align-content: flex-start;
-  gap: 12px;
+  gap: 1.5rem;
   width: 90%;
   padding: 0;
+}
+
+.icons:hover {
+  color: var(--yellow);
+  font-size: larger;
 }
 
 .menu-text {
@@ -56,42 +77,33 @@ a {
   font-weight: 700;
   font-size: 32px;
   line-height: 44px;
-  color: #fff5e1;
+  color: var(--light);
 }
 
 .menu-container {
-  padding-left: 5px;
-  border-bottom: 1px solid #fff5e1;
+  border-bottom: 1px solid var(--light);
 }
 
 .cross-icon {
   align-self: flex-end;
-  margin-right: 10px;
+  margin-right: 1.8rem;
 }
 
 header {
   width: 100%;
   height: auto;
-  background-color: #3c3a39;
+  background-color: var(--dark);
 }
 
 .toolbar {
-  display: flex;
   justify-content: flex-start;
   align-items: center;
-  padding: 20px;
+  padding: 2rem;
   width: 100%;
 }
 
 .white-color {
-  color: #fff;
-}
-
-.logo-placeholder {
-  display: flex;
-  align-items: center;
-  width: 101px;
-  height: 44px;
+  color: var(--white);
 }
 
 .name {
@@ -104,11 +116,8 @@ header {
 
 .menu-placeholder {
   margin-left: auto;
-  display: flex;
   align-items: center;
   justify-content: flex-end;
-  width: 60px;
-  height: 44px;
 }
 
 .desktop-menu-placeholder {
@@ -121,26 +130,22 @@ header {
 }
 
 .headline {
-  display: flex;
-  flex-direction: column;
   align-items: flex-start;
-  padding: 80px 24px;
+  padding: 4rem 2rem;
   margin-bottom: 0;
-  gap: 12px;
+  gap: 1.2rem;
   width: 100%;
-  background-color: #1c1a19;
+  background-color: var(--darker);
   background-image: url(images/headline-background.svg);
   background-repeat: no-repeat;
   background-position: 100% 125%;
 }
 
 .headline-bio {
-  display: flex;
-  flex-flow: column wrap;
+  flex-wrap: wrap;
   align-items: flex-start;
   width: 100%;
-  gap: 12px;
-  padding-bottom: 0;
+  gap: 1rem;
 }
 
 .primary-text {
@@ -150,7 +155,7 @@ header {
   font-size: 56px;
   line-height: 64px;
   letter-spacing: 0.37px;
-  color: #ff6b00;
+  color: var(--yellow);
   width: 100%;
   margin: 0;
 }
@@ -162,10 +167,8 @@ header {
   font-weight: 700;
   font-size: 24px;
   line-height: 32px;
-  color: #fff5e1;
+  color: var(--light);
   margin: 0;
-  display: flex;
-  align-items: center;
 }
 
 .description {
@@ -175,43 +178,34 @@ header {
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
-  color: #fff;
+  color: var(--white);
   margin: 0;
 }
 
 .social-media {
-  display: flex;
-  flex-direction: row;
   align-items: center;
   padding: 0;
 }
 
 .frame {
-  display: flex;
-  flex-direction: row;
   align-items: flex-start;
   width: 40px;
   height: 40px;
 }
 
 main {
-  display: flex;
-  flex-direction: column;
   align-items: center;
   padding: 0;
-  gap: 60px;
+  gap: 2rem;
   width: 100%;
 }
 
 .title {
-  display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
   width: 100%;
-  height: 100px;
   padding: 0;
-  border-bottom: 2px solid #e5e5e5;
+  border-bottom: 2px solid var(--lighter);
 }
 
 hr {
@@ -222,18 +216,17 @@ hr {
   font-family: 'Crete Round', sans-serif;
   font-style: normal;
   font-weight: 400;
-  font-size: 50px;
-  line-height: 52px;
+  font-size: 30px;
+  line-height: 32px;
   text-align: center;
 }
 
 .frame44 {
-  display: grid;
-  grid-template-rows: 1fr;
   justify-items: center;
   padding: 0 12px;
   gap: 24px;
   width: 100%;
+  border: 1px solid red;
 }
 
 .featured-img {
@@ -359,17 +352,13 @@ hr {
 .group {
   display: flex;
   flex-direction: column;
-  padding-top: 50px;
-  padding-left: 10px;
 }
 
 .group-header {
   font-family: 'Crete Round', sans-serif;
   font-style: normal;
-  font-weight: 400;
-  font-size: 32px;
-  line-height: 44px;
   color: #fff;
+  border: 1px solid red;
 }
 
 .group-para {
@@ -379,7 +368,8 @@ hr {
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
-  color: #fff;
+  color: red;
+  border: 1px solid red;
 }
 
 .group-ul {
@@ -864,6 +854,12 @@ textarea {
     display: none;
   }
 
+  .flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
   .name {
     animation-duration: 3s;
     animation-name: slide;
@@ -990,6 +986,9 @@ textarea {
   .h3-title {
     margin-left: 6%;
     padding-right: 0;
+    font-weight: 400;
+    font-size: 50px;
+    line-height: 52px;
     display: flex;
     justify-content: flex-start;
     align-items: center;
@@ -1012,16 +1011,18 @@ textarea {
     grid-column: 1 /2;
     width: 100%;
     padding-bottom: 0;
+    border: 1px solid red;
   }
 
   .featured-img {
     width: 90%;
     height: auto;
     display: grid;
-    grid-template-rows: 0.4fr 1fr;
-    grid-template-columns: 1fr 0.8fr;
+    grid-template-rows: 0.3fr 0.7fr;
+    grid-template-columns: 0.6fr 0.4fr;
     margin: 0 5%;
     padding: 0;
+    border: 1px solid blue;
   }
 
   .featured-img > img {
@@ -1037,8 +1038,8 @@ textarea {
     grid-row: 1 / 2;
     grid-column: 2 / 3;
     width: 100%;
-    height: 70%;
-    display: inline-block;
+    /* height: 70%;
+    display: inline-block; */
   }
 
   .block-h2 {
@@ -1104,7 +1105,6 @@ textarea {
 
   .group-header {
     width: 100%;
-    height: 100%;
     display: flex;
     flex-wrap: nowrap;
     font-size: 2vw;
@@ -1113,14 +1113,13 @@ textarea {
 
   .group-para {
     width: 80%;
-    height: 100%;
     font-size: 1.102vw;
     line-height: 4vh;
   }
 
   .group-ul {
     width: 100%;
-    height: 10vh;
+    /* height: 10vh; */
     display: flex;
     align-items: flex-start;
   }
@@ -1175,8 +1174,6 @@ textarea {
     display: flex;
     flex-direction: column;
     gap: 0;
-    padding-top: 110px;
-    padding-left: 10px;
   }
 
   .desktop-project-btn {

@@ -1,11 +1,10 @@
 <a name="readme-top"></a>
 
-
-<div align="center">
-
-  <h1><b>Tobuya Portfolio</b></h1>
-
-</div>
+[![Contributors](https://img.shields.io/github/contributors/tobuya/Portfolio)](https://github.com/tobuya/Portfolio/graphs/contributors)
+[![LastUpdate](https://img.shields.io/github/last-commit/tobuya/Portfolio)](https://github.com/tobuya/Portfolio/commits/dev)
+[![Stargazers](https://img.shields.io/github/stars/tobuya/Portfolio)](https://github.com/tobuya/Portfolio/stargazers)
+[![Issues](https://img.shields.io/github/issues/tobuya/Portfolio)](https://github.com/tobuya/Portfolio/issues)
+[![License](https://img.shields.io/github/license/tobuya/Portfolio)](https://github.com/tobuya/Portfolio/blob/main/LICENSE)
 
 # 📗 Table of Contents
 
@@ -31,7 +30,7 @@
 
 # 📖 Portfolio <a name="about-project"></a>
 
->  This is a portfolio repository built from a Figma design for desktop and mobile version to demonstrate Responsive Web Design using CSS Flex layout, CSS Grid layout and HTML, and added interactivity using JavaScript.
+> Portfolio website showcases my skills and experience as a developer. It contains information about my projects and links to my online profiles. I'm constantly updating and expanding my portfolio with new projects and features so be sure to check back often.
 
 
 ## 🛠 Built With <a name="built-with"></a>
@@ -87,7 +86,7 @@ Set up Webhint, Stylelint, and ESLint in your local environment:
 
 
 ```sh
-  cd my-desired-folder
+  cd my-desired-folder/Portfolio
 
   npm install --save-dev hint@7.x
 
@@ -123,27 +122,9 @@ To run tests, run the following command:
 
 👤 **Thomas Obuya**
 
-- GitHub: [@githubhandle](https://github.com/tobuya)
-- Twitter: [@twitterhandle](https://twitter.com/MullerTheGreat1)
-- LinkedIn: [LinkedIn](https://www.linkedin.com/in/tobuya/)
-
-👤 **Nezerwa Eligrand**
-
-- GitHub: [@githubhandle](https://github.com/lengushuru)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
-
-👤 **Lengushuru Charles**
-
-- GitHub: [@githubhandle](https://github.com/Nezerwa)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
-
-👤 **Emmanuel Somarib**
-
-- GitHub: [@githubhandle](https://github.com/somarib)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
+- [GitHub](https://github.com/tobuya)
+- [LinkedIn](https://www.linkedin.com/in/tobuya/)
+- [AngeList](https://wellfound.com/u/tobuya)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -151,9 +132,9 @@ To run tests, run the following command:
 ## 🔭 Future Features <a name="future-features"></a>
 
 
-- [ ] **[Add Data Science Exhibition Project]**
-- [ ] **[Add Microverse Capstone Project 2]**
-- [ ] **[Add Microverse Capstone Project 3]**
+- [ ] **[Update project section]**
+- [ ] **[Add light and dark modes]**
+- [ ] **[Add animations and transitions]**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -175,7 +156,7 @@ Give a ⭐️ if you like this project!
 
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
-I would like to thank Microverse, my coding partners and the Figma template designer.
+I would like to thank [Nezerwa](https://github.com/Nezerwa), [Somarib](https://github.com/somarib), and [Lengushuru](https://github.com/lengushuru) for their contributions on different parts of this project.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 

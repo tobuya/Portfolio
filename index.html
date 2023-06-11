@@ -13,142 +13,167 @@
     <link href='https://fonts.googleapis.com/css?family=Inter' rel='stylesheet'>
     <script src="script.js" defer></script>
 </head>
-<body>
+<body class="flex-column">
     <header id="header-section">
-        <div class="toolbar">
-            <div class="logo-placeholder">
+        <div class="toolbar flex-row">
+            <div class="flex-center">
                 <a href="#" class="name white-color">Tobuya</a>
             </div>
-            <nav class="menu-placeholder">
-                <a href="#" class="menu">
+            <nav class="menu-placeholder flex-row">
+                <a href="#" class="menu icons">
                     <img src="images/menu.svg" alt="Menu">
                 </a>
             </nav>
             <nav class="desktop-navigation">
                 <ul class="desktop-menu-placeholder">
                     <li class="desktop-nav-list">
-                        <a href="#">Portfolio</a>
+                        <a href="#projects" class="flex-center icons">
+                            <i class="material-icons md-light icons">computer</i>
+                            Projects
+                        </a>
                     </li>
                     <li class="desktop-nav-list">
-                        <a href="#">About</a>
+                        <a href="#information" class="flex-center icons">
+                            <i class="material-icons md-light icons">person_3</i>
+                            About
+                        </a>
                     </li>
                     <li class="desktop-nav-list">
-                        <a href="#">Contact</a>
-                    </li>
-                    <li class="desktop-nav-list">
-                        <i class="material-icons md-light">mail</i>
+                        <a href="#contact-me" class="flex-center icons">
+                            <i class="material-icons md-light icons">contact_mail</i>
+                            Contact
+                        </a>
                     </li>
                 </ul>
             </nav>
         </div>
     </header>
-    <main id="portfolio">
-        <section class="headline">
-            <div class="headline-bio">
+    <main id="portfolio" class="flex-column">
+        <section class="headline flex-column">
+            <div class="headline-bio flex-column">
                 <h1 class="primary-text">Hey There. <br class="break-point">I'm Thomas</h1>
-                <h2 class="supporting-text">I'm a Software Developer</h2>
-                <p class="description">I can help you build a product , feature or website. Look through some of my work and experience! If you like what you see and have a project you need coded, don’t hesitate to contact me.</p>
+                <h2 class="supporting-text">Software Developer</h2>
+                <p class="description">
+                    I'm a software developer who specializes in Full-stack web development and data analysis.
+                    I create impactful web applications and uncover valuable insights from data.
+                    Explore my work and let's bring your project to life.
+                </p>
             </div>
-            <ul class="social-media">
+            <ul class="social-media flex-row">
                 <li class="frame">
-                    <a href="#">
+                    <a href="https://github.com/tobuya">
                         <img class="github" src="images/Icon -GitHub.svg" alt="Github Icon">
                     </a>
                 </li>
                 <li class="frame">
-                    <a href="">
+                    <a href="https://www.linkedin.com/in/tobuya/">
                         <img src="images/linkedin.svg" alt="LinkedIn Icon">
                     </a>
                 </li>
                 <li class="frame">
-                    <a href="#">
-                        <img src="images/angelist 1.svg" alt="Peace Icon">
+                    <a href="https://wellfound.com/u/tobuya">
+                        <img src="images/angelist 1.svg" alt="Angelist Icon">
                     </a>
                 </li>
                 <li class="frame">
-                    <a href="#">
+                    <a href="https://twitter.com/MullerTheGreat1">
                         <img src="images/twitter.svg" alt="Twitter Icon">
                     </a>
                 </li>
                 <li class="frame">
-                    <a href="#">
-                        <img src="images/Vector.svg" alt="Vector Icon">
+                    <a href="https://medium.com/@thomasobuya95">
+                        <img src="images/Vector.svg" alt="Medium Icon">
                     </a>
                 </li>
             </ul>
         </section>
-        <section class="title">
-            <h2 class="h3-title">My Recent Works</h2>
-            <hr>
-        </section>
-        <section class="frame44">
+        <section class="frame44 flex-column" id="projects">
+            <div class="title flex-column">
+              <h2 class="h3-title">My Recent Works</h2>
+              <hr>
+            </div>
             <div class="featured-img">
-                <img src="images/placeholder.svg" alt="Featured project">
+                <img src="images/app_screenshot1.png" alt="Featured project">
                 <section class="right-block">
-                    <button class="interaction right-btn">See Project</button>
-                    <button class="desktop-btn">See Project</button>
+                    <button class="interaction right-btn" type="button">See Project</button>
+                    <button class="desktop-btn" type="button">See Project Desktop</button>
                 </section>
                 <section class="frame43">
-                    <section class="card-work bg-printing">
-                        <div class="group desktop-hide"></div>
-                        <button class="action action-btn">See Project</button>
-                        <button class="desktop-project-btn">See Project</button>
+                    <section class="card-work">
+                        <div class="group card-group"></div>
+                        <!-- <button class="action action-btn" type="button">See Project</button>
+                        <button class="desktop-project-btn" type="button">See Project</button> -->
                     </section>
                     <section class="card-work bg-availability">
                         <div class="group card-group"></div>
-                        <button class="action btn-hide">See Project</button>
+                        <!-- <button class="action btn-hide" type="button">See Project</button> -->
                     </section>
                     <section class="card-work background">
                         <div class="group card-group"></div>
-                        <button class="action btn-hide">See Project</button>
+                        <!-- <button class="action btn-hide" type="button">See Project</button> -->
                     </section>
                     <section class="card-work bg-print">
                         <div class="group card-group"></div>
-                        <button class="action btn-hide">See Project</button>
+                        <!-- <button class="action btn-hide" type="button">See Project</button> -->
                     </section>
                     <section class="card-work bg-availability">
-                        <div class="group card-group"></div> 
-                        <button class="action btn-hide">See Project</button>
+                        <div class="group card-group"></div>
+                        <!-- <button class="action btn-hide" type="button">See Project</button> -->
                     </section>
                     <section class="card-work background">
                         <div class="group card-group"></div>
-                        <button class="action btn-hide">See Project</button>
+                        <!-- <button class="action btn-hide" type="button">See Project</button> -->
                     </section>
                 </section>
             </div>
         </section>
         <section id="information" class="about-me">
             <h2>About me</h2>
-            <p>Hello I’m a software developer! I can help you build a product , feature or website Look through some of my work and experience! If you like what you see and have a project you need coded, don’t hesitate to contact me.</p>
-            <button class="interaction">Get My Resume</button>
+            <p>
+                Hello, I'm a software developer!
+                I can assist you in building products, features, websites or
+                extracting valuable insights from data.
+                Explore my portfolio to see my work and experience.
+                If you're interested and have a coding project, feel free to reach out!
+            </p>
+            <button class="interaction" type="button">Get My Resume</button>
             <div id="lang">
                 <ul>
                     <li id="language">
                         <h3>Language</h3>
                         <ul>
                             <li class="skills">Ruby</li>
-                            <li class="skills">Html</li>
-                            <li class="skills">Css</li>
-                            <li class="skills">Javascript</li>
+                            <li class="skills">JavaScript</li>
+                            <li class="skills">TypeScript</li>
+                            <li class="skills">R</li>
+                            <li class="skills">Python</li>
                         </ul>
                     </li>
                     <li id="framework">
                         <h3>Framework</h3>
                         <ul>
-                            <li class="skills">Bootstrap</li>
+                            <li class="skills">React & Redux library</li>
+                            <li class="skills">Bootstrap & Tailwind</li>
                             <li class="skills">Ruby on Rails</li>
-                            <li class="skills">RSPec</li>
-                            <li class="skills">CapyBara</li>
-                            <li class="skills">Selenium</li>
+                            <li class="skills">RSPec & Capybara</li>
+                            <li class="skills">Next.js</li>
+                        </ul>
+                    </li>
+                    <li id="skill">
+                        <h3>Database Management</h3>
+                        <ul>
+                            <li class="skills">PostgreSQL</li>
+                            <li class="skills">MySQL</li>
+                            <li class="skills">MongoDB</li>
                         </ul>
                     </li>
                     <li id="skill">
                         <h3>Skills</h3>
                         <ul>
-                            <li class="skills">Codekit</li>
-                            <li class="skills">Github</li>
-                            <li class="skills">Codepen</li>
-                            <li class="skills">Gitlab</li>
+                            <li class="skills">Firebase</li>
+                            <li class="skills">GitHub</li>
+                            <li class="skills">CodePen</li>
+                            <li class="skills">GitLab</li>
                             <li class="skills">Terminal</li>
                         </ul>
                     </li>
@@ -177,28 +202,28 @@
         </form>
         <ul class="social-media" id="social-media-footer">
             <li class="frame">
-                <a href="#">
+                <a href="https://github.com/tobuya">
                     <img class="github" src="images/github_two.svg" alt="Github Icon">
                 </a>
             </li>
             <li class="frame">
-                <a href="">
+                <a href="https://www.linkedin.com/in/tobuya/">
                     <img src="images/linkedin_two.svg" alt="LinkedIn Icon">
                 </a>
             </li>
             <li class="frame">
-                <a href="#">
-                    <img src="images/chill_two.svg" alt="Peace Icon">
+                <a href="https://wellfound.com/u/tobuya">
+                    <img src="images/chill_two.svg" alt="Angelist Icon">
                 </a>
             </li>
             <li class="frame">
-                <a href="#">
+                <a href="https://twitter.com/MullerTheGreat1">
                     <img src="images/twitter_two.svg" alt="Twitter Icon">
                 </a>
             </li>
             <li class="frame">
-                <a href="#">
-                    <img src="images/m_two.svg" alt="Vector Icon">
+                <a href="https://medium.com/@thomasobuya95">
+                    <img src="images/m_two.svg" alt="Medium Icon">
                 </a>
             </li>
         </ul>
