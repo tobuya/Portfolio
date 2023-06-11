@@ -178,6 +178,7 @@ window.addEventListener('load', () => {
       </ul>
   </div>
   `;
+  multiPostSection.classList.add('multi-post-section');
   multiPostSection.append(multiPostBtn);
   multiPostSection.append(multiPostBtnDesktop);
 });
